@@ -1,0 +1,141 @@
+### Post (get)[empty]://///////////////////////////////////post///////////////////
+
+GET http://localhost:3000/Post
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBlYTFhZWEwZTljZDFjNDljMzlmMDkiLCJpYXQiOjE3MTIyNDMzNTMsImV4cCI6MTcxMjI0MzQxM30.2p7rNaMIQInQQJv_zbE8W6nEvccuPbk_b0_sVwzg-XI
+
+### Post (get)[/:id]:
+
+GET http://localhost:3000/Post/66070b482303c501940b75c7
+
+
+### Post (get)[?]:
+
+GET http://localhost:3000/Post?sender=Aaa
+
+
+### Post (Post)[schema obj]:
+
+Post http://localhost:3000/Post
+content-type: application/json
+
+{
+    "message": "hasfasfuwu ",
+    "sender": "Alix"
+}
+
+### Post (put)[/:id]:
+
+put http://localhost:3000/Post/66070b482303c501940b75cd
+content-type: application/json
+
+{
+    "message": "hsdgm aasfasfix "
+
+}
+
+### Post (delete)[/:id]:
+
+delete http://localhost:3000/Post/66070b482303c501940b75c7
+
+### Student (get)[]://///////////////////////////////////student//////////////////  
+
+GET http://localhost:3000/Student
+
+### Student (get)[/:id]:
+
+GET http://localhost:3000/Student/217142406
+
+### Student (get)[?]: 
+GET http://localhost:3000/Student?name=Alex
+
+### Student (post)[schema obj]:
+
+POST http://localhost:3000/Student
+content-type: application/json
+
+{
+    "name": "Alax",
+    "_id": "117442406",
+    "age": 32
+}
+
+
+### Student (put)[/:id]:
+
+PUT http://localhost:3000/Student/217142406
+content-type: application/json
+
+{
+    "name": "bobsasfon",
+    "_id": "317142436",
+    "age": 122
+}
+
+### Student (delete)[/:id]:
+
+delete http://localhost:3000/Student/317142436
+
+
+### Item (get)[empty]://///////////////////////////////////item//////////////////
+
+GET http://localhost:3000/Item
+
+### Item (get)[/:id]:
+
+GET http://localhost:3000/Item/660049079851128e1c76f19f
+
+### Item (get)[?]: 
+GET http://localhost:3000/Item?name=ball
+
+
+### Item (Post)[schema obj]:
+
+Post http://localhost:3000/Item
+content-type: application/json
+
+{
+    "name": "chair"
+}
+
+### Item (put)[/:id]:
+
+put http://localhost:3000/Item/6601c76f19
+content-type: application/json
+
+{
+    "name": "updated-xD"
+}
+
+### Item (delete)[/:id]:
+
+delete http://localhost:3000/Item/660049079851128e1c76f19f
+
+### User (post)[/:register]://///////////////////////////////////User//////////////////  
+
+post http://localhost:3000/Auth/register
+content-type: application/json
+
+{
+    "email": "asax@mail.com",
+    "password": "123456"
+}
+
+###      User (post)[/:login]
+
+post http://localhost:3000/Auth/login 
+content-type: application/json
+
+{
+    "email": "asax@mail.com",
+    "password": "123456"
+}
+
+###        User (post)[/:logout]
+
+get http://localhost:3000/Auth/logout
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBlYTFhZWEwZTljZDFjNDljMzlmMDkiLCJzYWx0IjowLjE0MzgzMTc3MTA4NDg2ODY2LCJpYXQiOjE3MTIyNDMzNTN9.BlpSsNuwYv7PLSWAr8tHY47GxFM7YjPtJVK9Yl4tdWo
+
+###
+
+get http://localhost:3000/Auth/refresh
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBlYTFhZWEwZTljZDFjNDljMzlmMDkiLCJzYWx0IjowLjkxMDQwNzMzNzI5ODA0NDgsImlhdCI6MTcxMjI0MzIwNH0.u_vhirMo0XnS2aKJz7W4y6_j7cw6pdj6gZmsFnPtA7Q

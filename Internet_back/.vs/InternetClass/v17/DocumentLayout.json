@@ -1,0 +1,293 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\tests\\auth.test.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\tests\\auth.test.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\server.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\server.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\app.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\requests.rest||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:requests.rest||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\common\\auth_middleware.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\common\\auth_middleware.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\controllers\\auth.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\controllers\\auth.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\item_routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\routes\\item_routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\student_routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\routes\\student_routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\post_routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\routes\\post_routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\auth_routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\routes\\auth_routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\tests\\post.test.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\tests\\post.test.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\controllers\\post.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\controllers\\post.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\models\\post_model.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\models\\post_model.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\models\\user_model.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\models\\user_model.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\controllers\\baseController.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\controllers\\baseController.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\InternetClass\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "server.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\server.ts",
+              "RelativeDocumentMoniker": "src\\server.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\server.ts",
+              "RelativeToolTip": "src\\server.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T15:37:36.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\app.ts",
+              "RelativeDocumentMoniker": "src\\app.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\app.ts",
+              "RelativeToolTip": "src\\app.ts",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T15:37:17.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-04T12:49:20.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "requests.rest",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\requests.rest",
+              "RelativeDocumentMoniker": "requests.rest",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\requests.rest",
+              "RelativeToolTip": "requests.rest",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-04-04T12:48:27.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "item_routes.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\item_routes.ts",
+              "RelativeDocumentMoniker": "src\\routes\\item_routes.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\item_routes.ts",
+              "RelativeToolTip": "src\\routes\\item_routes.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T12:43:40.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "post_routes.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\post_routes.ts",
+              "RelativeDocumentMoniker": "src\\routes\\post_routes.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\post_routes.ts",
+              "RelativeToolTip": "src\\routes\\post_routes.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T12:43:21.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "student_routes.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\student_routes.ts",
+              "RelativeDocumentMoniker": "src\\routes\\student_routes.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\student_routes.ts",
+              "RelativeToolTip": "src\\routes\\student_routes.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T12:39:04.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "user_model.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\models\\user_model.ts",
+              "RelativeDocumentMoniker": "src\\models\\user_model.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\models\\user_model.ts",
+              "RelativeToolTip": "src\\models\\user_model.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T12:18:14.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "auth_routes.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\auth_routes.ts",
+              "RelativeDocumentMoniker": "src\\routes\\auth_routes.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\routes\\auth_routes.ts",
+              "RelativeToolTip": "src\\routes\\auth_routes.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T12:11:06.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "auth.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\controllers\\auth.ts",
+              "RelativeDocumentMoniker": "src\\controllers\\auth.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\controllers\\auth.ts",
+              "RelativeToolTip": "src\\controllers\\auth.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T11:48:10.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "auth.test.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\tests\\auth.test.ts",
+              "RelativeDocumentMoniker": "src\\tests\\auth.test.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\tests\\auth.test.ts",
+              "RelativeToolTip": "src\\tests\\auth.test.ts",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAAHsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T10:48:06.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "auth_middleware.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\common\\auth_middleware.ts",
+              "RelativeDocumentMoniker": "src\\common\\auth_middleware.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\common\\auth_middleware.ts",
+              "RelativeToolTip": "src\\common\\auth_middleware.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T11:04:20.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "post_model.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\models\\post_model.ts",
+              "RelativeDocumentMoniker": "src\\models\\post_model.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\models\\post_model.ts",
+              "RelativeToolTip": "src\\models\\post_model.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T11:01:39.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "post.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\controllers\\post.ts",
+              "RelativeDocumentMoniker": "src\\controllers\\post.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\controllers\\post.ts",
+              "RelativeToolTip": "src\\controllers\\post.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T10:28:36.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "post.test.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\tests\\post.test.ts",
+              "RelativeDocumentMoniker": "src\\tests\\post.test.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\tests\\post.test.ts",
+              "RelativeToolTip": "src\\tests\\post.test.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T10:10:27.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-04T10:09:30.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "baseController.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\controllers\\baseController.ts",
+              "RelativeDocumentMoniker": "src\\controllers\\baseController.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\InternetClass\\src\\controllers\\baseController.ts",
+              "RelativeToolTip": "src\\controllers\\baseController.ts",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T10:05:33.945Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

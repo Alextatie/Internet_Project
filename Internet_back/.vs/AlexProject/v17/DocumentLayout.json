@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AlexTa\\Desktop\\AlexProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\baseController.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\controllers\\baseController.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\student.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\controllers\\student.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\post.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\controllers\\post.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\item.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\controllers\\item.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "baseController.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\baseController.ts",
+              "RelativeDocumentMoniker": "src\\controllers\\baseController.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\baseController.ts",
+              "RelativeToolTip": "src\\controllers\\baseController.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-28T13:18:13.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "item.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\item.ts",
+              "RelativeDocumentMoniker": "src\\controllers\\item.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\item.ts",
+              "RelativeToolTip": "src\\controllers\\item.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-28T13:17:19.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "post.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\post.ts",
+              "RelativeDocumentMoniker": "src\\controllers\\post.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\post.ts",
+              "RelativeToolTip": "src\\controllers\\post.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-28T13:17:18.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "student.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\student.ts",
+              "RelativeDocumentMoniker": "src\\controllers\\student.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\AlexProject\\src\\controllers\\student.ts",
+              "RelativeToolTip": "src\\controllers\\student.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-28T13:17:18.191Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
