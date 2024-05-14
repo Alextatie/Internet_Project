@@ -11,10 +11,20 @@ const StudentAddPage: FC<{ route?: any,navigation: any }> = ({ navigation,route 
     const onSave = () => {
         console.log("Save")
         let editFlag = 0
+        if (id == "") {
+            console.log("ID can't be empty")
+            alert("ID can't be empty")
+            return navigation.navigate('Student List');
+        }
         if (route.params != undefined) {
             editFlag = route.params.id
+            if ((id != editFlag.toString()) && StudentModel.exists(id)) {
+                console.log("ID already exists")
+                alert("ID already exists")
+                return navigation.navigate('Student List');
+            }
         }
-        if (StudentModel.exists(id) && (id != editFlag.toString())) {
+        else if (StudentModel.exists(id)) {
             console.log("ID already exists")
             alert("ID already exists")
             return navigation.navigate('Student List');
@@ -22,7 +32,6 @@ const StudentAddPage: FC<{ route?: any,navigation: any }> = ({ navigation,route 
         if (route.params != undefined) {
             StudentModel.deleteStudent(route.params.id)
         }
-        StudentModel.deleteStudent(route.params.id)
         const student: Student = {
             name: name,
             id: id,

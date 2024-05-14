@@ -1,44 +1,29 @@
+import StudentApi from "../api/StudentApi"
+
 export type Student = {
     name: string,
     id: string,
-    imgUrl: string
+    avatar_url: string
 }
 
 const data: Student[] = [
-    {
-        name: "Alex Tatievsky",
-        id: "123456",
-        imgUrl: "../assets/thumbs-up-cat.gif"
-    },
-    {
-        name: "Bob Cohen",
-        id: "123457",
-        imgUrl: "../assets/thumbs-up-cat.gif"
-    },
-    {
-        name: "Abram Levi",
-        id: "123458",
-        imgUrl: "../assets/thumbs-up-cat.gif"
-    },
-    {
-        name: "Sam Bobby",
-        id: "123459",
-        imgUrl: "../assets/thumbs-up-cat.gif"
-    },
-    {
-        name: "Bill Button",
-        id: "123450",
-        imgUrl: "../assets/thumbs-up-cat.gif"
-    },
+   
 ]
 
-const getAllStudents = (): Student[] => {
-    return data;
+const getAllStudents = async () => {
+    let Data
+    try {
+        Data = await StudentApi.getAllStudents();
+    } catch (err) {
+        console.log(err)
+    }
+    return Data
 }
 
-const exists = (id: string) => {
+const exists = (id: any) => {
     const index = data.findIndex((student) => student.id === id);
-    if (index !== null) {
+    console.log("Id: "+id+", Index: "+index)
+    if (index >= 0) {
         return true
     }
     else {

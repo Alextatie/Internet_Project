@@ -39,8 +39,6 @@ describe("Student tests", () => {
         ["Ddd Ddd", "444444444"],
         ["Eee Eee", "555555555"]];
 
-    const ages = [11,22,33,44,55]
-
     test("/student (get)", async () => {
         const res = await request(app).get("/student").set('Authorization', 'Bearer ' + testUser.accessToken)
         expect(res.statusCode).toBe(200);
@@ -53,12 +51,11 @@ describe("Student tests", () => {
             res = await request(app).post("/student").send({
                 "name": students[i][0],
                 "_id": students[i][1],
-                "age": ages[i]
+                "avatar_url": "picture.com"
             }).set('Authorization', 'Bearer ' + testUser.accessToken);
             expect(res.statusCode).toBe(201);
             expect(res.body.name).toBe(students[i][0]);
             expect(res.body._id).toBe(students[i][1]);
-            expect(res.body.age).toBe(ages[i]);
         }
         res = await request(app).get("/student").set('Authorization', 'Bearer ' + testUser.accessToken)
         expect(res.statusCode).toBe(200);
@@ -70,7 +67,6 @@ describe("Student tests", () => {
         expect(res.statusCode).toBe(200);
         expect(res.body.name).toBe(students[0][0]);
         expect(res.body._id).toBe(students[0][1]);
-        expect(res.body.age).toBe(ages[0]);
     });
 
     test("/student?Name= (get)", async () => {
@@ -78,20 +74,17 @@ describe("Student tests", () => {
         expect(res.statusCode).toBe(200);
         expect(res.body[0].name).toBe(students[0][0]);
         expect(res.body[0]._id).toBe(students[0][1]);
-        expect(res.body[0].age).toBe(ages[0]);
     });
 
 
     test("/student/:id (put)", async () => {
         const res = await request(app).put("/student/" + students[3][1]).send({
 
-            "name": students[3][0] +" updated",
-            "age": ages[3] +5
+            "name": students[3][0] +" updated"
         }).set('Authorization', 'Bearer ' + testUser.accessToken)
         expect(res.statusCode).toBe(200);
         const updated = await request(app).get("/student/" + students[3][1]).set('Authorization', 'Bearer ' + testUser.accessToken)
         expect(updated.body.name).toBe(students[3][0] + " updated");
-        expect(updated.body.age).toBe(ages[3] +5);
         expect(updated.body._id).toBe(students[3][1]);
     });
 

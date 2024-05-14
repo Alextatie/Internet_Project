@@ -7,8 +7,7 @@
     "test": "jest --detectOpenHandles --forceExit --runInBand",
     "authtest": "jest --detectOpenHandles --forceExit ./src/tests/auth.test.ts",
     "posttest": "jest --detectOpenHandles --forceExit ./src/tests/post.test.ts",
-    "studenttest": "jest --detectOpenHandles --forceExit ./src/tests/item.test.ts",
-    "itemtest": "jest --detectOpenHandles --forceExit ./src/tests/student.test.ts",
+    "studenttest": "jest --detectOpenHandles --forceExit ./src/tests/student.test.ts",
     "start": "tsc && node dist/src/server.js",
     "lint": "eslint . --ext .ts",
     "devstart": "nodemon ./src/server.ts"
