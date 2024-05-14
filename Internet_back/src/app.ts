@@ -20,7 +20,6 @@ db.once('open', () => console.log('connected to mongo'));*/
 //routes
 import studentRoute from "./routes/student_routes";
 import postRoute from "./routes/post_routes";
-import itemRoute from "./routes/item_routes";
 import authRoute from "./routes/auth_routes";
 
 
@@ -34,7 +33,6 @@ const initApp = () => {
             app.use(bodyParser.urlencoded({ extended: true }));
             app.use("/student", studentRoute);
             app.use("/post", postRoute);
-            app.use("/item", itemRoute);
             app.use("/auth", authRoute);
             resolve(app);
         })

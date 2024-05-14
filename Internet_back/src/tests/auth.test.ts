@@ -52,6 +52,7 @@ describe("Auth tests", () => {
         expect(refreshToken).not.toBeNull();
         const res2 = await request(app).get("/student")
             .set('Authorization', 'Bearer ' + accessToken);
+        console.log("HERE: "+res2)
         expect(res2.statusCode).toBe(200);
         const res3 = await request(app).get("/student")
             .set('Authorization', 'Bearer ' + accessToken + "a");

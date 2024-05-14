@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\Components",
+    "\\api",
     "\\models"
   ],
-  "SelectedNode": "\\Components\\StudentList.tsx",
+  "SelectedNode": "\\models\\StudentModel.ts",
   "PreviewInSolutionExplorer": false
 }
