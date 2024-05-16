@@ -1,7 +1,7 @@
 ### Post (get)[empty]://///////////////////////////////////post///////////////////
 
 GET http://localhost:3000/Post
-Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBlYTFhZWEwZTljZDFjNDljMzlmMDkiLCJpYXQiOjE3MTIyNDMzNTMsImV4cCI6MTcxMjI0MzQxM30.2p7rNaMIQInQQJv_zbE8W6nEvccuPbk_b0_sVwzg-XI
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQ1Njg3YTEyZjNlYTdkNTcxZTU4YTgiLCJpYXQiOjE3MTU4MjQ3NjQsImV4cCI6MTcxNTgyNDc2OX0.fzNro9wK8Jpgypmu5dK6Uum5Ckl4Nvsn8-UFFPemuqM
 
 ### Post (get)[/:id]:
 
@@ -39,7 +39,8 @@ delete http://localhost:3000/Post/66070b482303c501940b75c7
 
 ### Student (get)[]://///////////////////////////////////student//////////////////  
 
-GET http://localhost:3000/Student
+GET http://localhost:3000/Student     
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQ1Njg3YTEyZjNlYTdkNTcxZTU4YTgiLCJpYXQiOjE3MTU4MjQ5MTUsImV4cCI6MTcxNTgyNzkxNX0.jSCVtIAMKaNUU59vXvHDhjiR935wu_mltJB4SYyswAo
 
 ### Student (get)[/:id]:
 
@@ -116,8 +117,10 @@ post http://localhost:3000/Auth/register
 content-type: application/json
 
 {
-    "email": "asax@mail.com",
-    "password": "123456"
+    "_id": "163433",
+    "name": "Booboo Gaga",
+    "email": "54hf@mail.com",
+    "password": "sdg33"
 }
 
 ###      User (post)[/:login]
@@ -139,3 +142,12 @@ Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBlYTFhZWEw
 
 get http://localhost:3000/Auth/refresh
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBlYTFhZWEwZTljZDFjNDljMzlmMDkiLCJzYWx0IjowLjkxMDQwNzMzNzI5ODA0NDgsImlhdCI6MTcxMjI0MzIwNH0.u_vhirMo0XnS2aKJz7W4y6_j7cw6pdj6gZmsFnPtA7Q
+
+
+###
+
+GET http://localhost:3000/User
+
+###
+
+GET http://localhost:3000/User/163433

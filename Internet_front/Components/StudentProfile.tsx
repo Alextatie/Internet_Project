@@ -4,10 +4,9 @@ import StudentModel from '../models/StudentModel';
 
 
 const StudentProfile: FC<{ route: any, navigation: any }> = ({ route, navigation }) => {
-    const student = StudentModel.getStudent(route.params.id);
     useEffect(() => {
         navigation.setOptions({
-            title: student?.name,
+            title: route.params.name,
             headerRight: () => (
                 <Button
                     onPress={() => navigation.navigate('Add Student', { id: route.params.id })}
@@ -16,15 +15,21 @@ const StudentProfile: FC<{ route: any, navigation: any }> = ({ route, navigation
             ),
         })
     }, [])
-
-
-
     return (
         <View style={styles.container}>
             <Image style={styles.avatar} source={require('../assets/thumbs-up-cat.gif')} />
-            <Text style={styles.input}>{student?.name}</Text>
-            <Text style={styles.input}>{student?.id}</Text>
-            <Text style={styles.input}>{student?.imgUrl}</Text>
+            <View style={styles.panel}>
+                <Text style={styles.input2}>{"name:  " }</Text>
+                <Text style={styles.input1}>{ route.params.name}</Text>
+            </View>
+            <View style={styles.panel}>
+                <Text style={styles.input2}>{"id:  " }</Text>
+                <Text style={styles.input1}>{+ route.params.id}</Text>
+            </View>
+            <View style={styles.panel}>
+                <Text style={styles.input2}>{"email:  " }</Text>
+                <Text style={styles.input1}>{ route.params.email}</Text>
+            </View>
         </View>
     );
 }
@@ -34,6 +39,19 @@ const styles = StyleSheet.create({
         marginTop: StatusBar.currentHeight,
         flex: 1,
         flexDirection: 'column',
+        marginBottom: 280,
+        marginHorizontal:20
+
+    },
+    panel: {
+        padding: 8,
+        paddingLeft: 14,
+        marginTop: StatusBar.currentHeight,
+        borderWidth: 1,
+        borderRadius: 15,
+        borderColor: "gray",
+        flex: 1,
+        flexDirection: 'row'
     },
     title: {
         fontSize: 30,
@@ -45,11 +63,13 @@ const styles = StyleSheet.create({
         height: 200,
         width: 200,
     },
-    input: {
-        height: 40,
-        margin: 12,
-        borderWidth: 1,
-        padding: 10,
+    input1: {
+        fontSize: 16,
+        fontWeight: "bold"
+    },
+    input2: {
+        fontWeight: "bold",
+        color: "grey"
     },
     buttons: {
         flexDirection: 'row',

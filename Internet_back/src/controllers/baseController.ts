@@ -18,6 +18,9 @@ class BaseController<ModelType>{
             else if (req.query.name) {
                 item = await this.itemModel.find({ name: req.query.name });
             }
+            else if (req.query.email) {
+                item = await this.itemModel.find({ email: req.query.email });
+            }
             else if (req.query.sender) {
                 item = await this.itemModel.find({ sender: req.query.sender });
             }

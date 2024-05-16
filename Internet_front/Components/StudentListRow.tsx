@@ -6,16 +6,17 @@ import styles from '../styles';
 const StudentListRow: FC<{
     name: string,
     id: string,
+    email:string,
     imgUrl: string,
-    onItemSelected: (name:string)=>void
-}> = ({ name, id, imgUrl, onItemSelected }) => {
+    onItemSelected: (id:string,email:string,name:string)=>void
+}> = ({ name, id, imgUrl,email, onItemSelected }) => {
     const onClick = () => {
-        onItemSelected(id);
+        onItemSelected(id,email,name);
     }
     return (
         <TouchableHighlight onPress={onClick} underlayColor="white">
             <View style={styles.listrow}>
-                {/*<Image style={styles.avatar} source={require(imgUrl)}/>*/}
+                {/*<Image style={styles.avatar} source={require(avatar_url)}/>*/}
                 <Image style={styles.avatar} source={require("../assets/thumbs-up-cat.gif")} />
                 <View style={styles.info}>
                     <Text style={styles.name}>{name}</Text >

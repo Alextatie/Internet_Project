@@ -3,40 +3,68 @@ import StudentApi from "../api/StudentApi"
 export type Student = {
     name: string,
     id: string,
+    email: string,
+    password: string,
     avatar_url: string
 }
 
-const data: Student[] = [
-   
-]
+let data = Array<Student>()
 
 const getAllStudents = async () => {
-    let Data
+    console.log("getAllStudents()")
+    const res: any = await StudentApi.getAllStudents()
+    let data = Array<Student>()
+    if (res.data) {
+        res.data.forEach((obj: any) => {
+            const st: Student = {
+                name: obj.name,
+                id: obj._id,
+                email: obj.email,
+                password: obj.password,
+                avatar_url: obj.avatar_url
+            }
+            data.push(st)
+        });
+    }
+    return data
+}
+
+const exists = async (id: string, type: string) => {
     try {
-        Data = await StudentApi.getAllStudents();
+        const student: any = await StudentApi.exists(id, type)
+        if (Object.keys(student.data).length > 0) {
+            return true
+        }
+        else {
+            return false
+        }
     } catch (err) {
         console.log(err)
     }
-    return Data
 }
 
-const exists = (id: any) => {
-    const index = data.findIndex((student) => student.id === id);
-    console.log("Id: "+id+", Index: "+index)
-    if (index >= 0) {
-        return true
-    }
-    else {
-        return false
-    }
-}
 
-const getStudent = (id: string): Student | undefined => {
-    return data.find((student) => student.id == id);
+const getStudent = async (id: string): Promise<Student | undefined> => {
+    try {
+        const res: any = await StudentApi.getStudent(id)
+        return res.data
+    } catch (err) {
+        console.log(err)
+    }
 }
 
 const addStudent = (student: Student) => {
-    data.push(student);
+    const data = {
+        _id: student.id,
+        name: student.name,
+        email: student.email,
+        password: student.password
+    }
+    try {
+        const res = StudentApi.addStudent(data)
+    } catch (err) {
+        console.log(err)
+    }
 }
 
 const deleteStudent = (id: string) => {
@@ -46,4 +74,4 @@ const deleteStudent = (id: string) => {
     }
 }
 
-export default { getAllStudents, getStudent, addStudent, deleteStudent,exists };
+export default { getAllStudents, getStudent, addStudent, deleteStudent, exists };

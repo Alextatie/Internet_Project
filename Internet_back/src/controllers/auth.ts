@@ -14,15 +14,30 @@ const register = async (req: Request, res: Response) => {
         res.status(400).send("Missing password");
         console.log("Missing password");
     }
+    else if (req.body.name == null) {
+        res.status(400).send("Missing name");
+        console.log("Missing name");
+    }
+    else if (req.body._id == null) {
+        res.status(400).send("Missing id");
+        console.log("Missing id");
+    }
     else {
         try {
-            const user = await User.findOne({email: req.body.email});
+            let user = await User.findOne({email: req.body.email});
             if (user) {
                 res.status(400).send("Email already in use");
                 console.log("Email already in use");
             }
+            user = await User.findOne({ _id: req.body._id });
+            if (user) {
+                res.status(400).send("id already in use");
+                console.log("id already in use");
+            }
             else {
                 const newUser = await User.create({
+                    _id: req.body._id,
+                    name: req.body.name,
                     email: req.body.email,
                     password: await bcrypt.hash(req.body.password,await bcrypt.genSalt(10))
                 });

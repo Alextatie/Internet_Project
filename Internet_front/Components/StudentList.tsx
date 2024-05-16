@@ -6,15 +6,25 @@ import StudentModel, { Student } from '../models/StudentModel';
 
 const StudentList: FC<{ navigation: any }> = ({ navigation }) => {
     const [data, setData] = useState<Student[]>([])
-    const onItemSelected = (id: string) => {
+    const onItemSelected =  (id: string,email:string,name:string) => {
         console.log('Item selected: ' + id);
-        navigation.navigate('Student Profile', { id: id });
+        //const student: any = await StudentModel.getStudent(id);
+        //const name = student.name
+        //const nid = student.id
+        //const email = student.email
+        navigation.navigate('Student Profile', { id: id, email: email, name: name });
     }
 
     useEffect(() => {
-        const unsubscribe = navigation.addListener('focus', () => {
-            setData([...StudentModel.getAllStudents()])
-            console.log("screen in focus")
+        const unsubscribe = navigation.addListener('focus', async () => {
+            try {
+                const students = await StudentModel.getAllStudents()
+                setData(students)
+                console.log("screen in focus")
+            } catch (err) {
+                console.log(err)
+
+            }
         })
         return unsubscribe
     }, [navigation])
@@ -40,7 +50,8 @@ const StudentList: FC<{ navigation: any }> = ({ navigation }) => {
                 <StudentListRow
                     name={item.name}
                     id={item.id}
-                    imgUrl={item.imgUrl}
+                    email={item.email}
+                    imgUrl={item.avatar_url}
                     onItemSelected={onItemSelected}
                 />
             )}

@@ -6,9 +6,10 @@ import StudentModel, { Student } from '../models/StudentModel';
 const StudentAddPage: FC<{ route?: any,navigation: any }> = ({ navigation,route }) => {
     const [name, nameInput] = React.useState('');
     const [id, idInput] = React.useState('');
-    const [address, addressInput] = React.useState('');
+    const [email, emailInput] = React.useState('');
+    const [password, passwordInput] = React.useState('');
 
-    const onSave = () => {
+    const onSave = async () => {
         console.log("Save")
         let editFlag = 0
         if (id == "") {
@@ -16,17 +17,42 @@ const StudentAddPage: FC<{ route?: any,navigation: any }> = ({ navigation,route 
             alert("ID can't be empty")
             return navigation.navigate('Student List');
         }
+        if (name == "") {
+            console.log("name can't be empty")
+            alert("name can't be empty")
+            return navigation.navigate('Student List');
+        }
+        if (email == "") {
+            console.log("email can't be empty")
+            alert("email can't be empty")
+            return navigation.navigate('Student List');
+        }
+        if (password == "") {
+            console.log("password can't be empty")
+            alert("password can't be empty")
+            return navigation.navigate('Student List');
+        }
         if (route.params != undefined) {
             editFlag = route.params.id
-            if ((id != editFlag.toString()) && StudentModel.exists(id)) {
+            if ((id != editFlag.toString()) && await StudentModel.exists(id, "id")) {
                 console.log("ID already exists")
                 alert("ID already exists")
                 return navigation.navigate('Student List');
             }
+            if ((email != route.params.email.toString()) && await StudentModel.exists(email, "email")) {
+                console.log("email already exists")
+                alert("email already exists")
+                return navigation.navigate('Student List');
+            }
         }
-        else if (StudentModel.exists(id)) {
+        if (await StudentModel.exists(id, "id")) {
             console.log("ID already exists")
             alert("ID already exists")
+            return navigation.navigate('Student List');
+        }
+        else if (await StudentModel.exists(email, "email")) {
+            console.log("email already exists")
+            alert("email already exists")
             return navigation.navigate('Student List');
         }
         if (route.params != undefined) {
@@ -35,9 +61,16 @@ const StudentAddPage: FC<{ route?: any,navigation: any }> = ({ navigation,route 
         const student: Student = {
             name: name,
             id: id,
-            imgUrl: address
+            avatar_url: "temp",
+            email: email,
+            password: password
         }
-        StudentModel.addStudent(student);
+        try {
+            console.log("adding " + student.id)
+            await StudentModel.addStudent(student);
+        } catch (err) {
+            console.log(err)
+        }
         navigation.navigate('Student List');
     }
     const onBack = () => {
@@ -62,9 +95,15 @@ const StudentAddPage: FC<{ route?: any,navigation: any }> = ({ navigation,route 
             />
             <TextInput
                 style={styles.textInput}
-                onChangeText={addressInput}
-                value={address}
-                placeholder={"address"}
+                onChangeText={emailInput}
+                value={email}
+                placeholder={"email"}
+            />
+            <TextInput
+                style={styles.textInput}
+                onChangeText={passwordInput}
+                value={password}
+                placeholder={"password"}
             />
             <View style={styles.buttons}>
                 <TouchableOpacity style={styles.button} onPress={onSave}>

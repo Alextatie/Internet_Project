@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\api",
+    "\\Components",
     "\\models"
   ],
-  "SelectedNode": "\\models\\StudentModel.ts",
   "PreviewInSolutionExplorer": false
 }
