@@ -9,7 +9,7 @@ const StudentProfile: FC<{ route: any, navigation: any }> = ({ route, navigation
             title: route.params.name,
             headerRight: () => (
                 <Button
-                    onPress={() => navigation.navigate('Add Student', { id: route.params.id })}
+                    onPress={() => navigation.navigate('StudentEdit', { id: route.params.id })}
                     title="Edit"
                 />
             ),

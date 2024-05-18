@@ -1,26 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\",
+  "WorkspaceRootPath": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentAddPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentAddPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\PostScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\PostScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\ClientApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\ClientApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\ForumScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\ForumScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\StudentApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\StudentApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\models\\StudentModel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\StudentModel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\LoginScreen.tsx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\LoginScreen.tsx||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\HomeScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\HomeScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\RegisterScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\RegisterScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentList.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentList.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\PreLoginScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\PreLoginScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentListRow.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentListRow.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentApi.tsx",
-              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\StudentApi.tsx",
-              "RelativeDocumentMoniker": "api\\StudentApi.tsx",
-              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\StudentApi.tsx",
-              "RelativeToolTip": "api\\StudentApi.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAxAAAA",
+              "DocumentIndex": 0,
+              "Title": "PostScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\PostScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\PostScreen.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\PostScreen.tsx",
+              "RelativeToolTip": "Components\\PostScreen.tsx",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-14T19:25:52.083Z",
+              "WhenOpened": "2024-05-18T11:17:37.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClientApi.tsx",
-              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\ClientApi.tsx",
-              "RelativeDocumentMoniker": "api\\ClientApi.tsx",
-              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\ClientApi.tsx",
-              "RelativeToolTip": "api\\ClientApi.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAADAAAA",
+              "Title": "ForumScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\ForumScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\ForumScreen.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\ForumScreen.tsx",
+              "RelativeToolTip": "Components\\ForumScreen.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-14T19:08:26.345Z",
+              "WhenOpened": "2024-05-18T11:17:19.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentEdit.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentEdit.tsx",
+              "RelativeDocumentMoniker": "Components\\StudentEdit.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentEdit.tsx",
+              "RelativeToolTip": "Components\\StudentEdit.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-18T11:17:02.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\LoginScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\LoginScreen.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\LoginScreen.tsx",
+              "RelativeToolTip": "Components\\LoginScreen.tsx",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-18T11:15:06.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\App.tsx",
+              "RelativeDocumentMoniker": "App.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\App.tsx",
+              "RelativeToolTip": "App.tsx",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-18T11:06:05.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\RegisterScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\RegisterScreen.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\RegisterScreen.tsx",
+              "RelativeToolTip": "Components\\RegisterScreen.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-18T11:03:08.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentProfile.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentProfile.tsx",
+              "RelativeDocumentMoniker": "Components\\StudentProfile.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentProfile.tsx",
+              "RelativeToolTip": "Components\\StudentProfile.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-18T11:02:15.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentListRow.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentListRow.tsx",
+              "RelativeDocumentMoniker": "Components\\StudentListRow.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentListRow.tsx",
+              "RelativeToolTip": "Components\\StudentListRow.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-18T11:02:14.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PreLoginScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\PreLoginScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\PreLoginScreen.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\PreLoginScreen.tsx",
+              "RelativeToolTip": "Components\\PreLoginScreen.tsx",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAwDEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-18T10:59:24.406Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\package.json",
-              "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\package.json",
-              "RelativeToolTip": "package.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-14T18:29:15.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentModel.ts",
-              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\models\\StudentModel.ts",
-              "RelativeDocumentMoniker": "models\\StudentModel.ts",
-              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\models\\StudentModel.ts",
-              "RelativeToolTip": "models\\StudentModel.ts",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAwAAAAMAAAA",
+              "Title": "HomeScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\HomeScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\HomeScreen.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\HomeScreen.tsx",
+              "RelativeToolTip": "Components\\HomeScreen.tsx",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-14T17:44:41.815Z",
+              "WhenOpened": "2024-05-18T10:58:48.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentAddPage.tsx",
-              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentAddPage.tsx",
-              "RelativeDocumentMoniker": "Components\\StudentAddPage.tsx",
-              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentAddPage.tsx",
-              "RelativeToolTip": "Components\\StudentAddPage.tsx",
-              "ViewState": "AQIAACAAAAAAAAAAAAAawDEAAAAmAAAA",
+              "DocumentIndex": 7,
+              "Title": "StudentList.tsx",
+              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentList.tsx",
+              "RelativeDocumentMoniker": "Components\\StudentList.tsx",
+              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentList.tsx",
+              "RelativeToolTip": "Components\\StudentList.tsx",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAwDcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-14T17:20:11.302Z",
+              "WhenOpened": "2024-05-18T10:58:40.538Z",
               "EditorCaption": ""
             }
           ]

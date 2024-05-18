@@ -12,7 +12,7 @@ const StudentList: FC<{ navigation: any }> = ({ navigation }) => {
         //const name = student.name
         //const nid = student.id
         //const email = student.email
-        navigation.navigate('Student Profile', { id: id, email: email, name: name });
+        navigation.navigate('StudentProfile', { id: id, email: email, name: name });
     }
 
     useEffect(() => {
@@ -30,16 +30,16 @@ const StudentList: FC<{ navigation: any }> = ({ navigation }) => {
     }, [navigation])
 
 
-    useEffect(() => {
-        navigation.setOptions({
-            headerRight: () => (
-                <Button
-                    onPress={() => navigation.navigate('Add Student')}
-                    title="Add"
-                />
-            ),
-        })
-    }, [])
+    //useEffect(() => {
+    //    navigation.setOptions({
+    //        headerRight: () => (
+    //            <Button
+    //                onPress={() => navigation.navigate('Register')}
+    //                title="Add"
+    //            />
+    //        ),
+    //    })
+    //}, [])
 
     return (
         <FlatList

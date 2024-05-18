@@ -3,7 +3,7 @@ import { StyleSheet, Text, TextInput, View, Image, StatusBar, TouchableOpacity, 
 import React, { useState, FC } from 'react';
 import StudentModel, { Student } from '../models/StudentModel';
 
-const StudentAddPage: FC<{ route?: any,navigation: any }> = ({ navigation,route }) => {
+const StudentEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
     const [name, nameInput] = React.useState('');
     const [id, idInput] = React.useState('');
     const [email, emailInput] = React.useState('');
@@ -15,45 +15,45 @@ const StudentAddPage: FC<{ route?: any,navigation: any }> = ({ navigation,route 
         if (id == "") {
             console.log("ID can't be empty")
             alert("ID can't be empty")
-            return navigation.navigate('Student List');
+            return navigation.navigate('StudentList');
         }
         if (name == "") {
             console.log("name can't be empty")
             alert("name can't be empty")
-            return navigation.navigate('Student List');
+            return navigation.navigate('StudentList');
         }
         if (email == "") {
             console.log("email can't be empty")
             alert("email can't be empty")
-            return navigation.navigate('Student List');
+            return navigation.navigate('StudentList');
         }
         if (password == "") {
             console.log("password can't be empty")
             alert("password can't be empty")
-            return navigation.navigate('Student List');
+            return navigation.navigate('StudentList');
         }
         if (route.params != undefined) {
             editFlag = route.params.id
             if ((id != editFlag.toString()) && await StudentModel.exists(id, "id")) {
                 console.log("ID already exists")
                 alert("ID already exists")
-                return navigation.navigate('Student List');
+                return navigation.navigate('StudentList');
             }
             if ((email != route.params.email.toString()) && await StudentModel.exists(email, "email")) {
                 console.log("email already exists")
                 alert("email already exists")
-                return navigation.navigate('Student List');
+                return navigation.navigate('StudentList');
             }
         }
         if (await StudentModel.exists(id, "id")) {
             console.log("ID already exists")
             alert("ID already exists")
-            return navigation.navigate('Student List');
+            return navigation.navigate('StudentList');
         }
         else if (await StudentModel.exists(email, "email")) {
             console.log("email already exists")
             alert("email already exists")
-            return navigation.navigate('Student List');
+            return navigation.navigate('StudentList');
         }
         if (route.params != undefined) {
             StudentModel.deleteStudent(route.params.id)
@@ -71,7 +71,7 @@ const StudentAddPage: FC<{ route?: any,navigation: any }> = ({ navigation,route 
         } catch (err) {
             console.log(err)
         }
-        navigation.navigate('Student List');
+        navigation.navigate('StudentList');
     }
     const onBack = () => {
         console.log("Back")
@@ -168,4 +168,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default StudentAddPage;
+export default StudentEdit;

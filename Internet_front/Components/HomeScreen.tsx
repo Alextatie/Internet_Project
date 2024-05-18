@@ -13,13 +13,17 @@ const HomeScreen: FC<{ navigation: any }> = ({ navigation }) => {
                 <Image source={require('../assets/Home.png')} style={styles.image} />
             </View>
             <Button
-                title="Student list"
-                onPress={() => navigation.navigate("Student List")}
+                title="Students"
+                onPress={() => navigation.navigate("StudentList")}
             />
             <Button
-                title="Add Student"
-                onPress={() => navigation.navigate("Add Student")}
+                title="Forum"
+                onPress={() => navigation.navigate("ForumScreen")}
             />
+            <Button
+                title="Profile"
+            />
+
         </View>
     );
 }

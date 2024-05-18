@@ -4,9 +4,8 @@
     "\\src",
     "\\src\\controllers",
     "\\src\\models",
-    "\\src\\routes",
-    "\\src\\tests"
+    "\\src\\routes"
   ],
-  "SelectedNode": "\\src\\controllers\\baseController.ts",
+  "SelectedNode": "\\requests.rest",
   "PreviewInSolutionExplorer": false
 }
