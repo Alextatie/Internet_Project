@@ -8,11 +8,12 @@ import { StyleSheet} from 'react-native';
         listrow: {
             flexDirection: "row",
             backgroundColor: "white",
-            borderWidth: 1,
+            borderWidth: 3,
             borderRadius: 10,
             marginHorizontal: 5,
-            marginVertical: 1,
-            borderColor: "gray",
+            marginVertical: 2,
+            borderColor: "#75B8D4",
+            elevation:7
             
         },
         info: {
@@ -28,24 +29,104 @@ import { StyleSheet} from 'react-native';
         name: {
             fontSize: 20,
             fontWeight: "bold",
-            marginVertical: 0
+            marginVertical: 0,
+            color: "#275061"
         },
         id: {
             fontSize: 15,
-            marginBottom: 10
+            marginBottom: 10,
+            color: "#326479"
         },
-        textInput: {
-            fontSize: 20
-        },
+
         flatlist: {
             flex: 1
         },
         image: {
-            alignSelf: "auto",
-            //height: 200,
-            //width: 200,
+            height: 267,
+            width: 320,
 
         },
+        spacer1: {
+            height: 50
+        },
+        spacer2: {
+            height: 35
+        },
+        button: {
+            backgroundColor: "#2393C2",
+            elevation: 1,
+            height: 42,
+            width: 140,
+            margin: 2,
+            borderRadius: 3
+        },
+        button2: {
+            backgroundColor: "#2393C2",
+            elevation: 1,
+            height: 72,
+            width: 240,
+            margin: 5,
+            borderRadius: 3
+        },
+        buttonText1: {
+            fontSize: 28,
+            color: "white",
+            fontWeight: "bold",
+            textAlign: "center"
+        },
+        buttonText2: {
+            fontSize: 24,
+            color: "white",
+            fontWeight: "bold",
+            textAlign: "center",
+            textAlignVertical: "center"
+            
+        },
+        buttonText3: {
+            fontSize: 44,
+            color: "white",
+            fontWeight: "bold",
+            textAlign: "center",
+            paddingTop: 5
+        },
+        buttonText4: {
+            fontSize: 20,
+            color: "white",
+            fontWeight: "bold",
+            textAlign: "center",
+            paddingTop: 5
+        },
+        buttonText5: {
+            fontSize: 17,
+            color: "white",
+            fontWeight: "bold",
+            textAlign: "center",
+            paddingTop: 5
+        },
+        title: {
+            fontSize: 34,
+            fontWeight: 'bold',
+            color: "#75B8D4"
+        },
+        textInput: {
+            height: 48,
+            margin: 12,
+            borderWidth: 1,
+            padding: 10,
+            fontSize: 24
+        },
+        buttons: {
+            flexDirection: "row",
+            //backgroundColor: "red",
+            alignItems: "center",
+            justifyContent: "space-between",
+            paddingHorizontal: 7
+        },
+        buttons2: {
+            //backgroundColor: "red",
+            alignItems: "center",
+            justifyContent: "space-between",
+        }
     });
 
 export default styles

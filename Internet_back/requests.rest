@@ -117,10 +117,10 @@ post http://localhost:3000/Auth/register
 content-type: application/json
 
 {
-    "_id": "163433",
-    "name": "Booboo Gaga",
-    "email": "54hf@mail.com",
-    "password": "sdg33"
+    "_id": "1",
+    "name": "1",
+    "email": "1",
+    "password": "1"
 }
 
 ###      User (post)[/:login]
@@ -136,7 +136,7 @@ content-type: application/json
 ###        User (post)[/:logout]
 
 get http://localhost:3000/Auth/logout
-Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBlYTFhZWEwZTljZDFjNDljMzlmMDkiLCJzYWx0IjowLjE0MzgzMTc3MTA4NDg2ODY2LCJpYXQiOjE3MTIyNDMzNTN9.BlpSsNuwYv7PLSWAr8tHY47GxFM7YjPtJVK9Yl4tdWo
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIzMTc0MTQ1MDYiLCJpYXQiOjE3MTYxNzI4MDgsImV4cCI6MTcxNjE3NTgwOH0.jPye0CqA8ZFRj3lOrGhv_mR-jc_68LqOjw-yBeSvQKI
 
 ###
 

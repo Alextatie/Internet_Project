@@ -1,7 +1,8 @@
 //import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, Image, StatusBar, TouchableOpacity, Button, Alert } from 'react-native';
 import React, { useState, FC } from 'react';
-import StudentModel, { Student } from '../models/StudentModel';
+import StudentModel, { Student, Login } from '../models/StudentModel';
+import styles from '../styles';
 
 const LoginScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
     const [email, emailInput] = React.useState('');
@@ -9,6 +10,19 @@ const LoginScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }
 
     const onLogin = async () => {
         console.log("Login")
+        const login: Login = {
+            email: email,
+            password: password
+            //email: "asax@mail.com",
+            //password: "123456"
+        }
+        try {
+            console.log("Login: " + login.email)
+            await StudentModel.login(login);
+        } catch (err) {
+            console.log(err)
+        }
+        StudentModel.debug()
         navigation.navigate('Home');
         //let editFlag = 0
         //if (email == "") {
@@ -47,20 +61,7 @@ const LoginScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }
         //if (route.params != undefined) {
         //    StudentModel.deleteStudent(route.params.id)
         //}
-        //const student: Student = {
-        //    name: name,
-        //    id: id,
-        //    avatar_url: "temp",
-        //    email: email,
-        //    password: password
-        //}
-        //try {
-        //    console.log("adding " + student.id)
-        //    await StudentModel.addStudent(student);
-        //} catch (err) {
-        //    console.log(err)
-        //}
-        //navigation.navigate('StudentList');
+        
     }
     const onBack = () => {
         console.log("Back")
@@ -68,8 +69,8 @@ const LoginScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }
     }
 
     return (
-        <View style={styles.container}>
-            <Image source={require('../assets/thumbs-up-cat.gif')} style={styles.image} />
+        <View style={mystyles.container}>
+            <Image source={require('../assets/PreLogin.png')} style={mystyles.image} />
             <TextInput
                 style={styles.textInput}
                 onChangeText={emailInput}
@@ -84,29 +85,22 @@ const LoginScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }
             />
             <View style={styles.buttons}>
                 <TouchableOpacity style={styles.button} onPress={onLogin}>
-                    <Text style={styles.buttonText}>Login</Text>
+                    <Text style={styles.buttonText1}>Login</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.button} onPress={onBack}>
-                    <Text style={styles.buttonText}>Back</Text>
+                    <Text style={styles.buttonText1}>Back</Text>
                 </TouchableOpacity>
             </View>
         </View>
     );
 }
 
-const styles = StyleSheet.create({
+const mystyles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "white",
         marginTop: 80,
     },
-    textInput: {
-        height: 40,
-        margin: 12,
-        borderWidth: 1,
-        padding: 10,
-    },
-
     title: {
         fontSize: 30,
         backgroundColor: 'white',
@@ -115,33 +109,10 @@ const styles = StyleSheet.create({
 
     image: {
         alignSelf: "center",
-        height: 200,
-        width: 200,
+        height: 400 ,
+        width: 600
 
-    },
-    buttons: {
-        flexDirection: "row",
-        //backgroundColor: "red",
-        alignItems: "center",
-        paddingHorizontal: 7
-    },
-    button: {
-        flex: 1,
-        backgroundColor: "silver",
-        alignItems: "center",
-        marginHorizontal: 5
-    },
-    buttonText: {
-        padding: 5,
-        fontSize: 25,
-        color: "black"
-    },
-    tile: {
-        alignSelf: "center",
-        marginTop: 9,
-        transform: [{ scale: 1.4 }]
     }
-
 
 });
 

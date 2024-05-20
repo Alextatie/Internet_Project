@@ -10,6 +10,8 @@ let tsender;
 const testUser = {
     email: "Post@gmail.com",
     password: "123456",
+    name: "Alex",
+    _id: "testid",
     accessToken: null,
     refreshToken: null
 }

@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity, Button, Alert, TextInput, StatusBar } from 'react-native';
-import React, { useState, FC, useEffect } from 'react';
-import StudentModel from '../models/StudentModel';
+import { Text, FlatList, Button } from 'react-native';
+import { FC, useState, useEffect } from "react";
+import styles from '../styles';
+import PostListRow from './PostListRow';
+import PostModel, { Post } from '../models/PostModel';
 
-
-const ForumScreen: FC<{ route: any, navigation: any }> = ({ route, navigation }) => {
+const PostScreen: FC<{ navigation: any }> = ({ navigation }) => {
     useEffect(() => {
         navigation.setOptions({
             headerRight: () => (
@@ -14,44 +15,58 @@ const ForumScreen: FC<{ route: any, navigation: any }> = ({ route, navigation })
             ),
         })
     }, [])
-    const onBack = () => {
-        console.log("Back")
-        navigation.goBack()
+    const [data, setData] = useState<Post[]>([])
+    const onItemSelected = (message: string, sender: string,id:string) => {
+        console.log('Item selected: ' + id);
+        //const student: any = await StudentModel.getStudent(id);
+        //const name = student.name
+        //const nid = student.id
+        //const email = student.email
+        //navigation.navigate('StudentProfile', { id: id, email: email, name: name });
     }
+
+    useEffect(() => {
+        const unsubscribe = navigation.addListener('focus', async () => {
+            try {
+                const students = await PostModel.getAllPosts()
+                setData(students)
+                console.log("screen in focus")
+            } catch (err) {
+                console.log(err)
+
+            }
+        })
+        return unsubscribe
+    }, [navigation])
+
+
+    //useEffect(() => {
+    //    navigation.setOptions({
+    //        headerRight: () => (
+    //            <Button
+    //                onPress={() => navigation.navigate('Register')}
+    //                title="Add"
+    //            />
+    //        ),
+    //    })
+    //}, [])
+
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>{"Forum"}</Text>
-            <TouchableOpacity style={styles.button} onPress={onBack}>
-                <Text style={styles.buttonText}>Back</Text>
-            </TouchableOpacity>
-        </View>
-    );
+        <FlatList
+            style={styles.flatlist}
+            data={data}
+            keyExtractor={(item) => item.id}
+            renderItem={({ item }) => (
+                <PostListRow
+                    sender={item.sender}
+                    message={item.message}
+                    id={item.id }
+
+                    onItemSelected={onItemSelected}
+                />
+            )}
+        />
+    )
 }
 
-const styles = StyleSheet.create({
-    container: {
-        marginTop: StatusBar.currentHeight,
-        flex: 1,
-        flexDirection: 'column',
-        marginBottom: 280,
-        marginHorizontal: 20
-
-    },
-    
-    title: {
-        fontSize: 30,
-        fontWeight: 'bold',
-        backgroundColor: 'blue',
-    },
-    button: {
-        flex: 1,
-        margin: 10,
-        alignItems: 'center',
-    },
-    buttonText: {
-        padding: 10
-    }
-
-});
-
-export default ForumScreen;
+export default PostScreen;

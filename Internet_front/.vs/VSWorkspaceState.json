@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\api",
     "\\Components",
     "\\models"
   ],
-  "SelectedNode": "\\Components\\PostScreen.tsx",
+  "SelectedNode": "\\Components\\StudentEdit.tsx",
   "PreviewInSolutionExplorer": false
 }

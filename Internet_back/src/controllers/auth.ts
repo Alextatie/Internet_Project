@@ -117,7 +117,7 @@ const login = async (req: Request, res: Response) => {
 }
 
 const refresh = async (req: Request, res: Response) => {
-    const oldrefreshToken = req.headers['authorization'] && req.headers['authorization'].split(' ')[1];
+    const oldrefreshToken = req.headers['refreshtoken'][0]
     if (oldrefreshToken == null) {
         res.status(401).send("Missing token");
     }
@@ -159,15 +159,18 @@ const refresh = async (req: Request, res: Response) => {
 }
 
 const logout = async (req: Request, res: Response) => {
-    const token = req.headers['authorization'] && req.headers['authorization'].split(' ')[1];
+    console.log("yabababa");
+
+    const token = req.headers['refreshtoken'][0]
     if (token == null) {
         console.log("Missing token");
         res.status(401).send("Missing token");
     }
     else {
-        jwt.verify(token, process.env.REFRESH_TOKEN_SECRET, async(error, userInfo) => {
+        jwt.verify(token, process.env.REFRESH_TOKEN_SECRET, async (error, userInfo) => {
+            
             if (error) {
-                console.log(error.message);
+                console.log("1");
                 res.status(403).send("Invalid request");
             }
             else {
@@ -175,13 +178,13 @@ const logout = async (req: Request, res: Response) => {
                 try {
                     const user = await User.findById(userId)
                     if (user == null) {
-                        console.log(error.message);
+                        console.log("2");
                         res.status(403).send("Invalid request");
                     }
                     else if (!user.tokens.includes(token)) {
                         user.tokens = []
                         await user.save();
-                        console.log(error.message);
+                        console.log("3");
                         res.status(403).send("Invalid request");
                     }
                     else {

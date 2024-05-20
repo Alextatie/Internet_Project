@@ -4,6 +4,7 @@ import React, { useState,FC } from 'react';
 import RegisterScreen from './Components/RegisterScreen';
 import StudentList from './Components/StudentList';
 import StudentProfile from './Components/StudentProfile';
+import EditableProfile from './Components/EditableProfile';
 import ForumScreen from './Components/ForumScreen';
 import PostScreen from './Components/PostScreen';
 import HomeScreen from './Components/HomeScreen';
@@ -25,10 +26,11 @@ export default function App() {
                 <Stack.Screen name="Register" component={RegisterScreen} options={{ title: 'Register' }} />
                 <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login' }} />
                 <Stack.Screen name="StudentList" component={StudentList} options={{ title: 'Students List' }} />
-                <Stack.Screen name="StudentEdit" component={StudentEdit} options={{ title: 'Students Edit' }} />
-                <Stack.Screen name="StudentProfile" component={StudentProfile} options={{ title: 'Student Profile' }} />
-                <Stack.Screen name="ForumScreen" component={ForumScreen} options={{ title: 'Forum Screen' }} />
-                <Stack.Screen name="PostScreen" component={PostScreen} options={{ title: 'Post Screen' }} />
+                <Stack.Screen name="StudentEdit" component={StudentEdit} options={{ title: 'Edit' }} />
+                <Stack.Screen name="StudentProfile" component={StudentProfile} options={{ title: 'Profile' }} />
+                <Stack.Screen name="EditableProfile" component={EditableProfile} options={{ title: 'Profile' }} />
+                <Stack.Screen name="ForumScreen" component={ForumScreen} options={{ title: 'Forum' }} />
+                <Stack.Screen name="PostScreen" component={PostScreen} options={{ title: 'Post' }} />
             </Stack.Navigator>
         </NavigationContainer>
 

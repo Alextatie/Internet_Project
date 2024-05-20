@@ -1,9 +1,9 @@
 import express from "express";
 const router = express.Router();
 import user from "../controllers/user";
-//import authMiddlewear from "../common/auth_middleware";
+import authMiddlewear from "../common/auth_middleware";
 
-router.get("/", user.get.bind(user));
+router.get("/", authMiddlewear, user.get.bind(user));
 //router.get("/", authMiddlewear, student.get.bind(student));
 
 router.get("/:id", user.getbyID.bind(user));

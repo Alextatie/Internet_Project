@@ -3,8 +3,24 @@ import React, { useState, FC, useEffect } from 'react';
 import StudentModel from '../models/StudentModel';
 import styles from '../styles';
 
-const StudentProfile: FC<{ route: any, navigation: any }> = ({ route, navigation }) => {
- 
+const EditableProfile: FC<{ route: any, navigation: any }> = ({ route, navigation }) => {
+    const onName = async () => {
+        console.log("Edit Name")
+        navigation.navigate('StudentEdit');
+    }
+    const onEmail = async () => {
+        console.log("Edit Email")
+        navigation.navigate('StudentEdit');
+    }
+    const onPassword = async () => {
+        console.log("Edit Password")
+        navigation.navigate('StudentEdit');
+    }
+    const onAvatar = async () => {
+        console.log("Edit Avatar")
+        //navigation.navigate('StudentEdit');
+    }
+
     return (
         <View style={mystyles.container}>
             <Image style={mystyles.avatar} source={require('../assets/thumbs-up-cat.gif')} />
@@ -24,8 +40,24 @@ const StudentProfile: FC<{ route: any, navigation: any }> = ({ route, navigation
                     <View>
                 <Text style={mystyles.input2}>{"email:  " }</Text>
                         <Text style={mystyles.input1}>{route.params.email}</Text>
-                    </View>
+                </View>
+                
             </View >
+            <View style={{ alignItems: "center", paddingTop:50}}>
+            <TouchableOpacity style={styles.button} onPress={onName}>
+                <Text style={styles.buttonText4}>Change Name</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={onEmail}>
+                    <Text style={styles.buttonText4}>Change Email</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={onPassword}>
+                    <Text style={styles.buttonText5}>Change Password</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={onAvatar}>
+                    <Text style={styles.buttonText4}>Change Avatar</Text>
+                </TouchableOpacity>
+            </View>
+
         </View>
     );
 }
@@ -35,7 +67,7 @@ const mystyles = StyleSheet.create({
         marginTop: StatusBar.currentHeight,
         flex: 1,
         flexDirection: 'column',
-        marginBottom: 280,
+        marginBottom: 80,
         marginHorizontal: 20,
         justifyContent: "space-between"
 
@@ -86,4 +118,4 @@ const mystyles = StyleSheet.create({
 
 });
 
-export default StudentProfile;
+export default EditableProfile;

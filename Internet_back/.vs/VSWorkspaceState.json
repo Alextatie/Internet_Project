@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\common",
     "\\src\\controllers",
     "\\src\\models",
-    "\\src\\routes"
+    "\\src\\routes",
+    "\\src\\tests"
   ],
-  "SelectedNode": "\\requests.rest",
+  "SelectedNode": "\\src\\controllers\\baseController.ts",
   "PreviewInSolutionExplorer": false
 }
