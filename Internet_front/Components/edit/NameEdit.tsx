@@ -1,16 +1,23 @@
 //import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, Image, StatusBar, TouchableOpacity, Button, Alert } from 'react-native';
 import React, { useState, FC } from 'react';
-import StudentModel, { Student, Editable } from '../models/StudentModel';
-import styles from '../styles';
+import StudentModel, { Student, Editable } from '../../models/StudentModel';
+import styles from '../../styles';
 
-const StudentEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
+const NameEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
     let [name, nameInput] = React.useState('');
 
     const onSave = async () => {
         try {
-            console.log("Editing " + StudentModel.getCurrent().id)
-            await StudentModel.Edit(name, "name")
+            if (name == "") {
+                console.log("Cannot have empty fields")
+                alert("Cannot have empty fields")
+                //return navigation.navigate('PreLogin');
+            }
+            else {
+                console.log("Editing " + StudentModel.getCurrent().id)
+                await StudentModel.Edit(name, "name")
+            }
         } catch (err) {
             console.log(err)
         }
@@ -27,7 +34,7 @@ const StudentEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }
 
     return (
         <View style={mystyles.container}>
-            <Image source={require('../assets/PreLogin.png')} style={mystyles.image} />
+            <Image source={require('../../assets/PreLogin.png')} style={mystyles.image} />
             <Text style={mystyles.title}>Old Name: {StudentModel.getCurrent().name}</Text>
             <TextInput
                 style={styles.textInput}
@@ -86,4 +93,4 @@ const mystyles = StyleSheet.create({
 
 });
 
-export default StudentEdit;
+export default NameEdit;

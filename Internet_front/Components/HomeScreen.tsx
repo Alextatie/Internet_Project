@@ -6,20 +6,18 @@ import StudentModel, { Student } from '../models/StudentModel';
 
 const HomeScreen: FC<{ navigation: any }> = ({ navigation }) => {
     const onLogout = async () => {
-        console.log("Logout")
+        alert("Loging out")
         StudentModel.logout()
         navigation.navigate('PreLogin');
     }
     const onStudents = async () => {
-        console.log("StudentList")
         navigation.navigate('StudentList');
     }
     const onForum = async () => {
-        console.log("ForumScreen")
         navigation.navigate('ForumScreen');
     }
     const onProfile = async () => {
-        console.log("Profile")
+        console.log("Current-Profile")
         navigation.navigate('EditableProfile', {
             id: StudentModel.getCurrent().id,
             email: StudentModel.getCurrent().email,

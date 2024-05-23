@@ -68,6 +68,32 @@ import { StyleSheet} from 'react-native';
             margin: 5,
             borderRadius: 3
         },
+        button3: {
+            backgroundColor: "orange",
+            elevation: 1,
+            height: 36,
+            width: 36,
+            margin: 2,
+            borderRadius: 3,
+            marginTop:12
+        },
+        button4: {
+            backgroundColor: "red",
+            elevation: 1,
+            height: 36,
+            width: 36,
+            margin: 2,
+            borderRadius: 3,
+            marginTop: 12
+        },
+        button5: {
+            backgroundColor: "red",
+            elevation: 1,
+            height: 24,
+            width: 60,
+            margin: 2,
+            borderRadius: 3
+        },
         buttonText1: {
             fontSize: 28,
             color: "white",
@@ -103,6 +129,12 @@ import { StyleSheet} from 'react-native';
             textAlign: "center",
             paddingTop: 5
         },
+        buttonText6: {
+            fontSize: 16,
+            color: "white",
+            fontWeight: "bold",
+            textAlign: "center"
+        },
         title: {
             fontSize: 34,
             fontWeight: 'bold',
@@ -115,6 +147,14 @@ import { StyleSheet} from 'react-native';
             padding: 10,
             fontSize: 24
         },
+        textInput2: {
+            height: 146,
+            margin: 12,
+            borderWidth: 1,
+            paddingHorizontal:7,
+            fontSize: 22,
+            textAlignVertical:"top"
+        },
         buttons: {
             flexDirection: "row",
             //backgroundColor: "red",
@@ -126,7 +166,46 @@ import { StyleSheet} from 'react-native';
             //backgroundColor: "red",
             alignItems: "center",
             justifyContent: "space-between",
-        }
+        },
+        buttons3: {
+            flexDirection: "row",
+            //backgroundColor: "red",
+            alignItems: "center",
+            justifyContent: "center",
+            paddingHorizontal: 7
+        },
+        button6: {
+            backgroundColor: "orange",
+            elevation: 1,
+            height: 42,
+            width: 140,
+            margin: 2,
+            borderRadius: 3
+        },
+        button7: {
+            backgroundColor: "red",
+            elevation: 1,
+            height: 42,
+            width: 140,
+            margin: 2,
+            borderRadius: 3
+        },
+        button8: {
+            backgroundColor: "orange",
+            elevation: 1,
+            height: 36,
+            width: 46,
+            margin: 2,
+            borderRadius: 3
+        },
+        button9: {
+            backgroundColor: "red",
+            elevation: 1,
+            height: 36,
+            width: 46,
+            margin: 2,
+            borderRadius: 3
+        },
     });
 
 export default styles

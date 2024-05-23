@@ -6,58 +6,78 @@ import styles from '../styles';
 const EditableProfile: FC<{ route: any, navigation: any }> = ({ route, navigation }) => {
     const onName = async () => {
         console.log("Edit Name")
-        navigation.navigate('StudentEdit');
+        navigation.navigate('NameEdit');
     }
     const onEmail = async () => {
         console.log("Edit Email")
-        navigation.navigate('StudentEdit');
+        navigation.navigate('EmailEdit');
     }
     const onPassword = async () => {
         console.log("Edit Password")
-        navigation.navigate('StudentEdit');
+        navigation.navigate('PasswordEdit');
     }
     const onAvatar = async () => {
         console.log("Edit Avatar")
-        //navigation.navigate('StudentEdit');
+        //navigation.navigate('NameEdit');
+    }
+    const onDelete = async () => {
+        console.log("Delete User")
+        navigation.navigate('DeleteUser');
+    }
+    const onPosts = async () => {
+        console.log("User Posts")
+        navigation.navigate('UserPosts');
     }
 
     return (
         <View style={mystyles.container}>
-            <Image style={mystyles.avatar} source={require('../assets/thumbs-up-cat.gif')} />
-            <View style={mystyles.panel}>
-                <View>
-                <Text style={mystyles.input2}>{"name:  " }</Text>
+            <View style={mystyles.row}>
+                <Image style={mystyles.avatar} source={require('../assets/thumbs-up-cat.gif')} />
+                <TouchableOpacity style={styles.button3} onPress={onAvatar}>
+                    <Text style={styles.buttonText4}>Edit</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={mystyles.row}>
+                <View style={mystyles.panel}>
+                    <Text style={mystyles.input2}>{"name:  " }</Text>
                     <Text style={mystyles.input1}>{route.params.name}</Text>
                 </View>
+                <TouchableOpacity style={styles.button3} onPress={onName}>
+                    <Text style={styles.buttonText4}>Edit</Text>
+                </TouchableOpacity>
             </View>
-            <View style={mystyles.panel}>
-            <View>
-                <Text style={mystyles.input2}>{"id:  " }</Text>
-                    <Text style={mystyles.input1}>{+ route.params.id}</Text>
-                </View>
-            </View>
+            <View style={mystyles.row}>
                 <View style={mystyles.panel}>
-                    <View>
-                <Text style={mystyles.input2}>{"email:  " }</Text>
-                        <Text style={mystyles.input1}>{route.params.email}</Text>
+                    <Text style={mystyles.input2}>{"Password:  "}</Text>
+                    <Text style={mystyles.input1}>{route.params.id}</Text>
                 </View>
-                
-            </View >
-            <View style={{ alignItems: "center", paddingTop:50}}>
-            <TouchableOpacity style={styles.button} onPress={onName}>
-                <Text style={styles.buttonText4}>Change Name</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={onEmail}>
-                    <Text style={styles.buttonText4}>Change Email</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={onPassword}>
-                    <Text style={styles.buttonText5}>Change Password</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={onAvatar}>
-                    <Text style={styles.buttonText4}>Change Avatar</Text>
+                <TouchableOpacity style={styles.button3} onPress={onPassword}>
+                    <Text style={styles.buttonText4}>Edit</Text>
                 </TouchableOpacity>
             </View>
-
+            <View style={mystyles.row}>
+                <View style={mystyles.panel}>
+                    <Text style={mystyles.input2}>{"Email:  "}</Text>
+                    <Text style={mystyles.input1}>{route.params.email}</Text>
+                </View>
+                <TouchableOpacity style={styles.button3} onPress={onEmail}>
+                    <Text style={styles.buttonText4}>Edit</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={mystyles.row}>
+                <View style={mystyles.panel}>
+                    <Text style={mystyles.input2}>{"ID:  "}</Text>
+                    <Text style={mystyles.input1}>{route.params.id}</Text>
+                </View>
+                <TouchableOpacity style={styles.button4} onPress={onDelete}>
+                    <Text style={styles.buttonText4}>DLT</Text>
+                </TouchableOpacity>
+            </View>
+            <View style={mystyles.row}>
+            <TouchableOpacity style={styles.button} onPress={onPosts}>
+                <Text style={styles.buttonText1}>Posts</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }
@@ -67,19 +87,26 @@ const mystyles = StyleSheet.create({
         marginTop: StatusBar.currentHeight,
         flex: 1,
         flexDirection: 'column',
-        marginBottom: 80,
+        marginBottom: 240,
         marginHorizontal: 20,
         justifyContent: "space-between"
 
     },
-    panel: {
-        paddingLeft: 7,
-        paddingTop:3,
+    row: {
+        paddingTop: 3,
         marginTop: StatusBar.currentHeight,
+        flexDirection: 'row',
+        justifyContent: "center",
+        
+  
+    },
+    panel: {
+        height: 64,
+        paddingLeft: 7,
         borderWidth: 3,
         borderRadius: 15,
         flex: 1,
-        flexDirection: 'row',
+        flexDirection: 'column',
         borderColor: "#75B8D4"
     },
     title: {

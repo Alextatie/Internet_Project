@@ -3,8 +3,6 @@ import jwt from "jsonwebtoken"
 
 const authMiddlewear = async (req: Request, res: Response, next: NextFunction) => {
 	const token = req.headers['accesstoken']
-	console.log(req.headers)
-	console.log("token: "+token)
 	if (token == null) {
 		console.log("Missing token");
 		res.status(401).send("Missing token");
@@ -12,11 +10,10 @@ const authMiddlewear = async (req: Request, res: Response, next: NextFunction) =
 	else {
 		jwt.verify(token, process.env.TOKEN_SECRET, (error, user) => {
 			if (error) {
-				console.log(error.message);
+				console.log("invalid token")
 				res.status(403).send("Invalid token");
 			}
 			else {
-				console.log("works? "+token);
 				req.body.user = user;
 				next();
 			}

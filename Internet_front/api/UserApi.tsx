@@ -11,22 +11,32 @@ const setTokens = (access: any, refresh: any) => {
         refreshToken: refreshToken
     })
 }
+const debug = () => {
+    console.log(accessToken)
+    console.log(refreshToken)
+}
 
 const getAllStudents = async () => {
     return apiClient.get('/user')
 }
 
-const getStudent = async (id: string) => {
-    return apiClient.get('/user/'+id)
+const getAllPosts = async (id: string) => {
+    return apiClient.get('/post?sender=' + id)
 }
 
-const exists = async (id: string, type: string) => {
+const getStudent = async (id: string) => {
+    return apiClient.get('/user?email=' + id)
+}
+
+const exists = (id: string, type: string) => {
     if (type == "id") {
-        return apiClient.get('/user?_id=' + id)
+        return apiClient.get('/user/check?_id=' + id)
+
     }
     else {
-        return apiClient.get('/user?email=' + id)
+        return apiClient.get('/user/check?email=' + id)
     }
+
 }
 
 const addStudent = async (studentJson:any) => {
@@ -45,10 +55,24 @@ const logout = async () => {
     return apiClient.get('/auth/logout')
 }
 
-const getAllPosts = async () => {
-    return apiClient.get('/post')
+const refresh = async () => {
+    return apiClient.get('/auth/refresh')
 }
 
+const deleteAccount = async (id:string) => {
+    return apiClient.delete('/user/' + id)
+}
+
+const postPost = async (postJson: any) => {
+    return apiClient.post('/post/', postJson)
+}
+
+const deletePost = async (id: string) => {
+    return apiClient.delete('/post/' + id)
+}
+const editPost = async (id: string,postJson:any) => {
+    return apiClient.put('/post/' + id, postJson)
+}
 
 export default {
     getAllStudents,
@@ -59,5 +83,11 @@ export default {
     logout,
     getAllPosts,
     EditStudent,
-    setTokens
+    setTokens,
+    refresh,
+    debug,
+    deleteAccount,
+    postPost,
+    deletePost,
+    editPost
 }

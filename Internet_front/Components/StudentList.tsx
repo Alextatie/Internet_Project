@@ -20,7 +20,6 @@ const StudentList: FC<{ navigation: any }> = ({ navigation }) => {
             try {
                 const students = await StudentModel.getAllStudents()
                 setData(students)
-                console.log("screen in focus")
             } catch (err) {
                 console.log(err)
 
@@ -28,18 +27,6 @@ const StudentList: FC<{ navigation: any }> = ({ navigation }) => {
         })
         return unsubscribe
     }, [navigation])
-
-
-    //useEffect(() => {
-    //    navigation.setOptions({
-    //        headerRight: () => (
-    //            <Button
-    //                onPress={() => navigation.navigate('Register')}
-    //                title="Add"
-    //            />
-    //        ),
-    //    })
-    //}, [])
 
     return (
         <FlatList

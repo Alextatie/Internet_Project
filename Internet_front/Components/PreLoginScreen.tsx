@@ -4,15 +4,15 @@ import styles from '../styles';
 
 const PreLoginScreen: FC<{ navigation: any }> = ({ navigation }) => {
     const onLogin = async () => {
-        console.log("Login")
+        console.log("To-Login")
         navigation.navigate('Login');
     }
     const onRegister = async () => {
-        console.log("Register")
+        console.log("To-Register")
         navigation.navigate('Register');
     }
     const onGoogle = async () => {
-        console.log("Google")
+        console.log("To-Google")
         //navigation.navigate('Register');
     }
     return (

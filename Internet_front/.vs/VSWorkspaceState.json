@@ -3,8 +3,9 @@
     "",
     "\\api",
     "\\Components",
+    "\\Components\\post",
     "\\models"
   ],
-  "SelectedNode": "\\Components\\StudentEdit.tsx",
+  "SelectedNode": "\\models\\PostModel.ts",
   "PreviewInSolutionExplorer": false
 }

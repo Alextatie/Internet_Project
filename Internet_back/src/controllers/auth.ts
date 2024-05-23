@@ -6,19 +6,19 @@ import jwt from "jsonwebtoken"
 //import auth_middleware from "../common/auth_middleware";
 
 const register = async (req: Request, res: Response) => {
-    if (req.body.email == null) {
+    if (req.body.email == "") {
         res.status(400).send("Missing email");
         console.log("Missing email");
     }
-    else if (req.body.password == null) {
+    else if (req.body.password == "") {
         res.status(400).send("Missing password");
         console.log("Missing password");
     }
-    else if (req.body.name == null) {
+    else if (req.body.name == "") {
         res.status(400).send("Missing name");
         console.log("Missing name");
     }
-    else if (req.body._id == null) {
+    else if (req.body._id == "") {
         res.status(400).send("Missing id");
         console.log("Missing id");
     }
@@ -69,25 +69,26 @@ const generateTokens = (userId: string): { accessToken: string, refreshToken: st
     }
 }
 
+
 const login = async (req: Request, res: Response) => {
-    if (req.body.email == null) {
-        res.status(400).send("Missing email");
+    if (req.body.email == "") {
         console.log("Missing email");
+        return res.status(400).send("Missing email");
     }
-    else if (req.body.password == null) {
-        res.status(400).send("Missing password");
+    else if (req.body.password == "") {
         console.log("Missing password");
+        return res.status(400).send("Missing password");
     }
     else {
         try {
             const user = await User.findOne({ email: req.body.email});
-            if (user==null) {
-                res.status(400).send("Wrong email or password");
+            if (user == null) {
                 console.log("Wrong email");
+                return res.status(400).send("Wrong email or password");
             }
             else if (!await bcrypt.compare(req.body.password, user.password)) {
-                res.status(400).send("Wrong email or password");
                 console.log("Wrong password");
+                return res.status(400).send("Wrong email or password");
             }
             else {
                 const { accessToken, refreshToken } = generateTokens(user._id.toString());
@@ -98,12 +99,12 @@ const login = async (req: Request, res: Response) => {
                     //user.tokens = user.tokens.filter(token => token != refreshToken);
                     user.tokens.push(refreshToken)
                 }
-                await user.save()
-                res.status(200).send({
+                console.log({
                     accessToken: accessToken,
                     refreshToken: refreshToken
                 });
-                console.log({
+                await user.save()
+                return res.status(200).send({
                     accessToken: accessToken,
                     refreshToken: refreshToken
                 });
@@ -117,36 +118,45 @@ const login = async (req: Request, res: Response) => {
 }
 
 const refresh = async (req: Request, res: Response) => {
-    const oldrefreshToken = req.headers['refreshtoken'][0]
+    console.log('refresh')
+    const oldrefreshToken = req.headers['refreshtoken']
     if (oldrefreshToken == null) {
-        res.status(401).send("Missing token");
+        console.log('0')
+        res.status(401).send("Missing tokenZZZ");
     }
     else {
         jwt.verify(oldrefreshToken, process.env.REFRESH_TOKEN_SECRET, async (error, userInfo: { _id: string }) => {
+            //console.log('1')
             if (error) {
-                console.log(error.message);
-                res.status(403).send("Invalid token");
+                //console.log('2')
+                return res.status(403).send("Invalid token");
             }
             else {
+                //console.log('3')
                 try {
                     const user = await User.findById(userInfo._id);
-                    if (user == null || user.tokens == null || !user.tokens.includes(oldrefreshToken)) {
+                    if (user == null || user.tokens == null || user.tokens != oldrefreshToken) {
+                        console.log(user.tokens)
                         if (user.tokens != null) {
+                            //console.log('5')
                             user.tokens = [];
                             await user.save();
                         }
-                        res.status(403).send("Invalid token");
+                        return  res.status(403).send("Invalid token");
                     }
                     else {
+                        //console.log('6')
                         const { accessToken, refreshToken } = generateTokens(user._id.toString());
-                        user.tokens = user.tokens.filter(token => token != oldrefreshToken);
+                        user.tokens = []
                         user.tokens.push(refreshToken);
                         await user.save();
-                        res.status(200).send({
+                        //console.log(user.tokens)
+                        //console.log(refreshToken)
+                        console.log({ accessToken: accessToken, refreshToken: refreshToken });
+                        return res.status(200).send({
                             accessToken: accessToken,
                             refreshToken: refreshToken
                         });
-                        console.log({ accessToken: accessToken, refreshToken: refreshToken });
                     }
                 } catch (error) {
                     console.log(error)
@@ -159,43 +169,33 @@ const refresh = async (req: Request, res: Response) => {
 }
 
 const logout = async (req: Request, res: Response) => {
-    console.log("yabababa");
-
-    const token = req.headers['refreshtoken'][0]
+    const token = req.headers['refreshtoken']
+    console.log("12541")
     if (token == null) {
         console.log("Missing token");
         res.status(401).send("Missing token");
     }
     else {
-        jwt.verify(token, process.env.REFRESH_TOKEN_SECRET, async (error, userInfo) => {
-            
-            if (error) {
-                console.log("1");
-                res.status(403).send("Invalid request");
-            }
-            else {
-                const userId= userInfo._id
-                try {
-                    const user = await User.findById(userId)
-                    if (user == null) {
-                        console.log("2");
-                        res.status(403).send("Invalid request");
-                    }
-                    else if (!user.tokens.includes(token)) {
-                        user.tokens = []
-                        await user.save();
-                        console.log("3");
-                        res.status(403).send("Invalid request");
-                    }
-                    else {
-                        user.tokens.splice(user.tokens.indexOf(token), 1)
-                        await user.save()
-                        console.log("we are here: " + user.tokens);
-                        res.status(200).send(user.tokens);
-                    }
-                } catch {
-                    res.status(403).send("403")
+        console.log("123")
+        jwt.verify(token, process.env.REFRESH_TOKEN_SECRET, async () => {
+            console.log(req.body.user)
+            const userId = req.body.user._id
+            const user = await User.findById(userId)
+            try {
+                if (user == null) {
+                    console.log("3")
+                    res.status(403).send("Invalid request");
                 }
+                else {
+                    console.log("2")
+                    user.tokens = []
+                    await user.save();
+                    res.status(200).send("Logged out");
+                }
+ 
+            } catch {
+                console.log("1")
+                res.status(403).send("403")
             }
         });
     }

@@ -1,7 +1,7 @@
 //import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, Image, StatusBar, TouchableOpacity, Button, Alert } from 'react-native';
-import React, { useState, FC } from 'react';
-import StudentModel, { Student, Login } from '../models/StudentModel';
+import { StyleSheet, Text, TextInput, View, Image, TouchableOpacity} from 'react-native';
+import React, {  FC } from 'react';
+import StudentModel, { Login } from '../models/StudentModel';
 import styles from '../styles';
 
 const LoginScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
@@ -9,58 +9,26 @@ const LoginScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }
     const [password, passwordInput] = React.useState('');
 
     const onLogin = async () => {
-        console.log("Login")
         const login: Login = {
             email: email,
             password: password
-            //email: "asax@mail.com",
-            //password: "123456"
         }
+        let res
         try {
-            console.log("Login: " + login.email)
-            await StudentModel.login(login);
+            res = await StudentModel.login(login);
         } catch (err) {
             console.log(err)
         }
-        StudentModel.debug()
-        navigation.navigate('Home');
-        //let editFlag = 0
-        //if (email == "") {
-        //    console.log("email can't be empty")
-        //    alert("email can't be empty")
-        //    return navigation.navigate('StudentList');
-        //}
-        //if (password == "") {
-        //    console.log("password can't be empty")
-        //    alert("password can't be empty")
-        //    return navigation.navigate('StudentList');
-        //}
-        //if (route.params != undefined) {
-        //    editFlag = route.params.id
-        //    if ((id != editFlag.toString()) && await StudentModel.exists(id, "id")) {
-        //        console.log("ID already exists")
-        //        alert("ID already exists")
-        //        return navigation.navigate('StudentList');
-        //    }
-        //    if ((email != route.params.email.toString()) && await StudentModel.exists(email, "email")) {
-        //        console.log("email already exists")
-        //        alert("email already exists")
-        //        return navigation.navigate('StudentList');
-        //    }
-        //}
-        //if (await StudentModel.exists(id, "id")) {
-        //    console.log("ID already exists")
-        //    alert("ID already exists")
-        //    return navigation.navigate('StudentList');
-        //}
-        //else if (await StudentModel.exists(email, "email")) {
-        //    console.log("email already exists")
-        //    alert("email already exists")
-        //    return navigation.navigate('StudentList');
-        //}
-        //if (route.params != undefined) {
-        //    StudentModel.deleteStudent(route.params.id)
-        //}
+        if (res.status == 400) {
+            alert("Wrong email or password")
+            console.log("Wrong email or password")
+            //navigation.goBack()
+        }
+        else if (res.status == 200) {
+            alert("Login: " + login.email)
+            console.log("Login: " + login.email)
+            navigation.navigate('Home');
+        }
         
     }
     const onBack = () => {

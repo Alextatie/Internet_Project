@@ -1,4 +1,5 @@
 import UserApi from "../api/UserApi"
+import StudentModel, { Student, Editable } from '../models/StudentModel';
 
 export type Post = {
     id: string,
@@ -6,11 +7,15 @@ export type Post = {
     sender: string
 }
 
-let data = Array<Post>()
+//let data = Array<Post>()
 
-const getAllPosts = async () => {
-    console.log("getAllPosts()")
-    const res: any = await UserApi.getAllPosts()
+const getAllPosts = async (id: string) => {
+    let res: any = await UserApi.getAllPosts(id)
+    console.log(res.status)
+    if (res.status == 403) {
+        await StudentModel.refresh()
+        res = await UserApi.getAllPosts(id)
+    }
     let data = Array<Post>()
     if (res.data) {
         res.data.forEach((obj: any) => {
@@ -22,52 +27,42 @@ const getAllPosts = async () => {
             data.push(st)
         });
     }
+    console.log(data.length + " posts loaded")
     return data
 }
+const postPost = async (msg:string) => {
+    try {
+        await StudentModel.refresh()
+        console.log("Posting post")
+        const data = {
+            message: msg,
+            sender: StudentModel.getCurrent().id
+        }
+        await UserApi.postPost(data)
+    } catch (err) {
+        console.log(err)
+    }
+}
 
-//const exists = async (id: string, type: string) => {
-//    try {
-//        const student: any = await StudentApi.exists(id, type)
-//        if (Object.keys(student.data).length > 0) {
-//            return true
-//        }
-//        else {
-//            return false
-//        }
-//    } catch (err) {
-//        console.log(err)
-//    }
-//}
+const editPost = async (id:string,msg: string) => {
+    try {
+        await StudentModel.refresh()
+        const data = {
+            message: msg
+        }
+        return await UserApi.editPost(id, data)
+    } catch (err) {
+    console.log(err)
+}
+}
 
+const deletePost = async (id: string) => {
+    try {
+        await StudentModel.refresh()
+        return await UserApi.deletePost(id)
+    } catch (err) {
+    console.log(err)
+}
+}
 
-//const getStudent = async (id: string): Promise<Student | undefined> => {
-//    try {
-//        const res: any = await StudentApi.getStudent(id)
-//        return res.data
-//    } catch (err) {
-//        console.log(err)
-//    }
-//}
-
-//const addStudent = (student: Student) => {
-//    const data = {
-//        _id: student.id,
-//        name: student.name,
-//        email: student.email,
-//        password: student.password
-//    }
-//    try {
-//        const res = StudentApi.addStudent(data)
-//    } catch (err) {
-//        console.log(err)
-//    }
-//}
-
-//const deleteStudent = (id: string) => {
-//    const index = data.findIndex((student) => student.id === id);
-//    if (index !== -1) {
-//        data.splice(index, 1);
-//    }
-//}
-
-export default { getAllPosts/*, getStudent, addStudent, deleteStudent, exists*/ };
+export default { getAllPosts, postPost,editPost,deletePost};

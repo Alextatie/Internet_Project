@@ -1,10 +1,11 @@
 import { Text, FlatList, Button } from 'react-native';
 import { FC, useState, useEffect } from "react";
-import styles from '../styles';
+import styles from '../../styles';
 import PostListRow from './PostListRow';
-import PostModel, { Post } from '../models/PostModel';
+import PostModel, { Post } from '../../models/PostModel';
 
 const PostScreen: FC<{ navigation: any }> = ({ navigation }) => {
+
     useEffect(() => {
         navigation.setOptions({
             headerRight: () => (
@@ -18,19 +19,14 @@ const PostScreen: FC<{ navigation: any }> = ({ navigation }) => {
     const [data, setData] = useState<Post[]>([])
     const onItemSelected = (message: string, sender: string,id:string) => {
         console.log('Item selected: ' + id);
-        //const student: any = await StudentModel.getStudent(id);
-        //const name = student.name
-        //const nid = student.id
-        //const email = student.email
-        //navigation.navigate('StudentProfile', { id: id, email: email, name: name });
+        navigation.navigate('Post', { message: message, sender: sender, id: id });
     }
 
     useEffect(() => {
         const unsubscribe = navigation.addListener('focus', async () => {
             try {
-                const students = await PostModel.getAllPosts()
-                setData(students)
-                console.log("screen in focus")
+                const posts = await PostModel.getAllPosts("")
+                setData(posts)
             } catch (err) {
                 console.log(err)
 

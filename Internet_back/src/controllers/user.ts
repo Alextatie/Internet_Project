@@ -11,6 +11,27 @@ class UserController extends BaseController<Iuser>{
         console.log("Get users:")
         super.get(req, res);
     }
+    async exists(req: Request, res: Response) {
+        try {
+            let item;
+            if (req.query._id) {
+                item = await this.itemModel.find({ _id: req.query._id });
+            }
+            else if (req.query.email) {
+                item = await this.itemModel.find({ email: req.query.email });
+            }
+            if (item.length > 0) {
+                return res.status(200).send(true);
+            }
+            else {
+                return res.status(200).send(false);
+            }
+
+        } catch (error) {
+            console.log("empty input");
+            return res.status(400).send(error);
+        }
+    }
 
     async getbyID(req: Request, res: Response) {
         console.log("Get users by ID:")

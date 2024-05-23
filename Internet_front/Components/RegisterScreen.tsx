@@ -1,6 +1,6 @@
 //import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, Image, StatusBar, TouchableOpacity, Button, Alert } from 'react-native';
-import React, { useState, FC } from 'react';
+import { StyleSheet, Text, TextInput, View, Image, TouchableOpacity } from 'react-native';
+import React, { FC } from 'react';
 import StudentModel, { Student } from '../models/StudentModel';
 import styles from '../styles';
 
@@ -12,67 +12,38 @@ const RegisterScreen: FC<{ route?: any,navigation: any }> = ({ navigation,route 
 
     const onSave = async () => {
         console.log("Save")
-        let editFlag = 0
-        if (id == "") {
-            console.log("ID can't be empty")
-            alert("ID can't be empty")
-            return navigation.navigate('PreLogin');
+        if ((id == "") || (name == "") || (email == "") || (password == "")) {
+            console.log("Cannot have empty fields")
+            alert("Cannot have empty fields")
+            //return navigation.navigate('PreLogin');
         }
-        else if (name == "") {
-            console.log("name can't be empty")
-            alert("name can't be empty")
-            return navigation.navigate('PreLogin');
-        }
-        else if (email == "") {
-            console.log("email can't be empty")
-            alert("email can't be empty")
-            return navigation.navigate('PreLogin');
-        }
-        else if (password == "") {
-            console.log("password can't be empty")
-            alert("password can't be empty")
-            return navigation.navigate('PreLogin');
-        }
-        else if (route.params != undefined) {
-            editFlag = route.params.id
-            if ((id != editFlag.toString()) && await StudentModel.exists(id, "id")) {
-                console.log("ID already exists")
-                alert("ID already exists")
-                return navigation.navigate('PreLogin');
-            }
-            else if ((email != route.params.email.toString()) && await StudentModel.exists(email, "email")) {
-                console.log("email already exists")
-                alert("email already exists")
-                return navigation.navigate('PreLogin');
-            }
-        }
-        else if (await StudentModel.exists(id, "id")) {
-            console.log("ID already exists")
+        else if (await StudentModel.exists(id, "id")==true) {
+            console.log("ID already exists "+id)
             alert("ID already exists")
-            return navigation.navigate('PreLogin');
+            //return navigation.navigate('PreLogin');
         }
-        else if (await StudentModel.exists(email, "email")) {
-            console.log("email already exists")
-            alert("email already exists")
-            return navigation.navigate('PreLogin');
+        else if (await StudentModel.exists(email, "email") == true) {
+            console.log("Email already exists")
+            alert("Email already exists")
+            //return navigation.navigate('PreLogin');
         }
-        if (route.params != undefined) {
-            StudentModel.deleteStudent(route.params.id)
+        else {
+            const student: Student = {
+                name: name,
+                id: id,
+                avatar_url: "temp",
+                email: email,
+                password: password
+            }
+            try {
+                console.log("Register: " + student.id)
+                alert("Account registered: " + student.id)
+                await StudentModel.addStudent(student);
+            } catch (err) {
+                console.log(err)
+            }
+            navigation.navigate('Home');
         }
-        const student: Student = {
-            name: name,
-            id: id,
-            avatar_url: "temp",
-            email: email,
-            password: password
-        }
-        try {
-            console.log("adding " + student.id)
-            await StudentModel.addStudent(student);
-        } catch (err) {
-            console.log(err)
-        }
-        navigation.navigate('Home');
     }
     const onBack = () => {
         console.log("Back")

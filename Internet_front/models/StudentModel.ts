@@ -24,8 +24,12 @@ let currentUser: Student
 let data = Array<Student>()
 
 const getAllStudents = async () => {
-    console.log("getAllStudents()")
-    const res: any = await UserApi.getAllStudents()
+    let res: any = await UserApi.getAllStudents()
+    console.log(res.status)
+    if (res.status == 403) {
+        await refresh()
+        res = await UserApi.getAllStudents()
+    }
     let data = Array<Student>()
     if (res.data) {
         res.data.forEach((obj: any) => {
@@ -39,18 +43,15 @@ const getAllStudents = async () => {
             data.push(st)
         });
     }
+    console.log(data.length+" students loaded")
     return data
 }
 
 const exists = async (id: string, type: string) => {
     try {
-        const student: any = await UserApi.exists(id, type)
-        if (Object.keys(student.data).length > 0) {
-            return true
-        }
-        else {
-            return false
-        }
+        const exists: any = await UserApi.exists(id, type)
+        console.log(exists.data)
+        return exists.data
     } catch (err) {
         console.log(err)
     }
@@ -66,15 +67,21 @@ const getStudent = async (id: string): Promise<Student | undefined> => {
     }
 }
 
-const addStudent = (student: Student) => {
+const addStudent = async (student: Student) => {
     const data = {
         _id: student.id,
         name: student.name,
         email: student.email,
         password: student.password
     }
+    const newlogin = {
+        email: student.email,
+        password: student.password
+
+    }
     try {
-        const res = UserApi.addStudent(data)
+        const res = await UserApi.addStudent(data)
+        await login(newlogin)
     } catch (err) {
         console.log(err)
     }
@@ -85,11 +92,10 @@ const login = async (Login: Login) => {
         email: Login.email,
         password: Login.password
     }
-
     try {
         const res:any = await UserApi.login(data)
         UserApi.setTokens(res.data.accessToken, res.data.refreshToken)
-        const student: any = await UserApi.exists(Login.email, "email")
+        const student: any = await UserApi.getStudent(Login.email)
         currentUser = {
             id: student.data[0]._id,
             name: student.data[0].name,
@@ -97,10 +103,18 @@ const login = async (Login: Login) => {
             password: student.data[0].password,
             avatar_url: "temp"
         }
+        return res
     } catch (err) {
         console.log(err)
     }
 }
+
+const refresh = async () => {
+    const newTokens: any = await UserApi.refresh()
+    UserApi.setTokens(newTokens.data.accessToken, newTokens.data.refreshToken)
+    UserApi.debug()
+}
+
 
 const debug = async () => {
     console.log(currentUser)
@@ -108,23 +122,30 @@ const debug = async () => {
 
 const logout = async () => {
     try {
-        console.log("logout")
+        await refresh()
+        console.log("Logout")
         await UserApi.logout()
     } catch (err) {
         console.log(err)
     }
 }
 
-const deleteStudent = (id: string) => {
-    const index = data.findIndex((student) => student.id === id);
-    if (index !== -1) {
-        data.splice(index, 1);
+const deleteAccount = async () => {
+    try {
+        await refresh()
+        console.log("Delete Account")
+        await UserApi.deleteAccount(currentUser.id)
+    } catch (err) {
+        console.log(err)
     }
 }
+
+
 
 const getCurrent = () => {
     return currentUser
 }
+
 
 const Edit = async (string: string, type: string) => {
     console.log("Edited: " + currentUser.id)
@@ -156,4 +177,4 @@ const Edit = async (string: string, type: string) => {
 }
 
 
-    export default { getAllStudents, getStudent, addStudent, deleteStudent, exists, login, logout,debug,getCurrent,Edit };
+    export default { getAllStudents, getStudent, addStudent, exists, login, logout,debug,getCurrent,Edit,refresh,deleteAccount};
