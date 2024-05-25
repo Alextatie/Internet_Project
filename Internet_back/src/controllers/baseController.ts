@@ -28,7 +28,7 @@ class BaseController<ModelType>{
                 item = await this.itemModel.find();
             }
             res.status(200).send(item);
-            console.log(item);
+            //console.log(item);
             
         } catch (error) {
             console.log(error);
@@ -76,7 +76,9 @@ class BaseController<ModelType>{
         }
     }
     
-    async remove(req: Request, res: Response){
+    async remove(req: Request, res: Response) {
+        console.log("Deleting")
+        console.log(req.params.id)
         try {
             const item = await this.itemModel.findByIdAndDelete(req.params.id);
             res.status(200).send(item);

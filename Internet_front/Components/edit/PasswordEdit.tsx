@@ -3,9 +3,11 @@ import { StyleSheet, Text, TextInput, View, Image, StatusBar, TouchableOpacity, 
 import React, { useState, FC } from 'react';
 import StudentModel, { Student, Editable } from '../../models/StudentModel';
 import styles from '../../styles';
+import ActivityIndicator from '../Lottie';
 
 const PasswordEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
     let [password, passwordInput] = React.useState('');
+    const [loading, setLoading] = useState(false)
 
     const onSave = async () => {
         try {
@@ -15,10 +17,13 @@ const PasswordEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route 
                 //return navigation.navigate('PreLogin');
             }
             else {
-                console.log("Editing " + StudentModel.getCurrent().id)
+                setLoading(true)
                 await StudentModel.Edit(password, "password")
+                setLoading(false)
+                console.log("Editing " + StudentModel.getCurrent().id)
             }
         } catch (err) {
+            setLoading(false)
             console.log(err)
         }
         navigation.navigate('EditableProfile', {
@@ -33,8 +38,12 @@ const PasswordEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route 
     }
 
     return (
+        loading ?
+            <ActivityIndicator visible={true} />
+            :
         <View style={mystyles.container}>
-            <Image source={require('../../assets/PreLogin.png')} style={mystyles.image} />
+                {StudentModel.getCurrent().avatar_url == "" && <Image style={styles.avatar2} source={require('../../assets/thumbs-up-cat.gif')} />}
+                {StudentModel.getCurrent().avatar_url != "" && <Image style={styles.avatar2} source={{ uri: StudentModel.getCurrent().avatar_url }} />}
             <Text style={mystyles.title}>Old password: *********</Text>
             <TextInput
                 style={styles.textInput}
@@ -57,8 +66,7 @@ const PasswordEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route 
 const mystyles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "white",
-        marginTop: 80,
+        backgroundColor: "white"
     },
     image: {
         alignSelf: "center",

@@ -1,6 +1,7 @@
 //import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, Image, StatusBar, TouchableOpacity, Button } from 'react-native';
-import React, { useState,FC } from 'react';
+import { StyleSheet, Text, TextInput, View, Image, StatusBar, TouchableOpacity, Button, ActivityIndicator } from 'react-native';
+import React, { useState, FC } from 'react';
+import Activity from './Components/Lottie';
 import RegisterScreen from './Components/RegisterScreen';
 import StudentList from './Components/StudentList';
 import StudentProfile from './Components/StudentProfile';
@@ -19,7 +20,6 @@ import Post from './Components/post/Post';
 import EditablePost from './Components/post/EditablePost';
 import EditedPost from './Components/post/EditedPost';
 //import NameEdit from './Components/edit/NameEdit';
-import styles from './styles';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -27,6 +27,7 @@ const Stack = createNativeStackNavigator();RegisterScreen
 
 export default function App() {     
     return (
+        
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ title: 'Home' }}>
                 <Stack.Screen name="PreLogin" component={PreLoginScreen} options={{ headerShown: false }} />

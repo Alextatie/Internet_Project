@@ -3,7 +3,11 @@ import mongoose from 'mongoose';
 export interface Ipost {
     message: string,
     sender: string,
+    senderName: string,
+    sender_avatar: string,
+    type: string
 }
+
 const postSchema = new mongoose.Schema<Ipost>({
     message: {
         type: String,
@@ -13,6 +17,18 @@ const postSchema = new mongoose.Schema<Ipost>({
         type: String,
         required: true
     },
+    senderName: {
+        type: String,
+        required: true
+    },
+    sender_avatar: {
+        type: String,
+        required: true
+    },
+    type: {
+        type: String,
+        required: true
+    }
 });
 
 export default mongoose.model<Ipost>("Post", postSchema);

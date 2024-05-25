@@ -4,25 +4,58 @@ import React, { useState, FC } from 'react';
 import StudentModel, { Student, Editable } from '../../models/StudentModel';
 import PostModel, { Post } from '../../models/PostModel';
 import styles from '../../styles';
+import ActivityIndicator from '../Lottie';
+import * as ImagePicker from 'expo-image-picker';
 
 const EditedPost: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
     let [message, messageInput] = React.useState('');
-
+    const [loading, setLoading] = useState(false)
     const onPost = async () => {
         try {
             if (message == "") {
                 console.log("Cannot send an empty post")
-                alert("annot send an empty post")
+                alert("Cannot send an empty post")
             }
             else {
+                setLoading(true)
+                await PostModel.editPost(route.params.id, message,"1")
+                setLoading(false)
                 console.log("Editing post from:  " + StudentModel.getCurrent().id)
-                await PostModel.editPost(route.params.id,message)
-                navigation.goBack()
+                return navigation.navigate('UserPosts');
             }
         } catch (err) {
             console.log(err)
         }
 
+    }
+    const onCamera = async () => {
+        console.log("Open Camera")
+        try {
+
+            const res = await ImagePicker.launchCameraAsync()
+            if (!res.canceled && res.assets.length > 0) {
+                //console.log("id: " + route.params.id, route.params.sender, route.params.message, route.params.sender_avatar)
+                await PostModel.editPost(route.params.id, res.assets[0].uri, "2")
+                return navigation.navigate('UserPosts');
+            }
+        } catch (err) {
+            console.log(err)
+        }
+        //navigation.navigate('NameEdit');
+    }
+    const onGallery = async () => {
+        console.log("Open Gallery")
+        try {
+
+            const res = await ImagePicker.launchImageLibraryAsync()
+            if (!res.canceled && res.assets.length > 0) {
+                await PostModel.editPost(route.params.id, res.assets[0].uri, "2")
+                return navigation.navigate('UserPosts');
+            }
+        } catch (err) {
+            console.log(err)
+        }
+        //navigation.navigate('NameEdit');
     }
     const onBack = () => {
         console.log("Back")
@@ -30,8 +63,12 @@ const EditedPost: FC<{ route?: any, navigation: any }> = ({ navigation, route })
     }
 
     return (
+        loading ?
+            <ActivityIndicator visible={true} />
+            :
         <View style={mystyles.container}>
-            <Image source={require('../../assets/PreLogin.png')} style={mystyles.image} />
+                {StudentModel.getCurrent().avatar_url == "" && <Image style={styles.avatar2} source={require('../../assets/thumbs-up-cat.gif')} />}
+                {StudentModel.getCurrent().avatar_url != "" && <Image style={styles.avatar2} source={{ uri: StudentModel.getCurrent().avatar_url }} />}
             <Text style={mystyles.title}>{StudentModel.getCurrent().name}:</Text>
             <TextInput
                 style={styles.textInput2}
@@ -42,7 +79,15 @@ const EditedPost: FC<{ route?: any, navigation: any }> = ({ navigation, route })
             <View style={styles.buttons}>
                 <TouchableOpacity style={styles.button} onPress={onPost}>
                     <Text style={styles.buttonText1}>Post</Text>
-                </TouchableOpacity>
+                    </TouchableOpacity>
+                    <View>
+                        <TouchableOpacity onPress={onCamera}>
+                            <Image style={mystyles.icon} source={require('../../assets/camera.png')} />
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={onGallery}>
+                            <Image style={mystyles.icon} source={require('../../assets/gallery.png')} />
+                        </TouchableOpacity>
+                    </View>
                 <TouchableOpacity style={styles.button} onPress={onBack}>
                     <Text style={styles.buttonText1}>Back</Text>
                 </TouchableOpacity>
@@ -54,14 +99,17 @@ const EditedPost: FC<{ route?: any, navigation: any }> = ({ navigation, route })
 const mystyles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "white",
-        marginTop: 80,
+        backgroundColor: "white"
     },
     image: {
         alignSelf: "center",
         height: 350,
         width: 475
 
+    },
+    icon: {
+        height: 36,
+        width: 36
     },
     title: {
         fontSize: 22,

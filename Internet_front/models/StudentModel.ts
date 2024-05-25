@@ -101,7 +101,7 @@ const login = async (Login: Login) => {
             name: student.data[0].name,
             email: student.data[0].email,
             password: student.data[0].password,
-            avatar_url: "temp"
+            avatar_url: student.data[0].avatar_url
         }
         return res
     } catch (err) {
@@ -171,6 +171,14 @@ const Edit = async (string: string, type: string) => {
                 flag: 3
             }
             currentUser.password = string
+            break;
+        case "avatar":
+            console.log("ayo: "+string)
+            data = {
+                avatar_url: string,
+                flag: 4
+            }
+            currentUser.avatar_url = string
             break;
     }
     UserApi.EditStudent(currentUser.id, data)

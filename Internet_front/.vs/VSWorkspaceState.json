@@ -6,6 +6,6 @@
     "\\Components\\post",
     "\\models"
   ],
-  "SelectedNode": "\\models\\PostModel.ts",
+  "SelectedNode": "\\Components\\post\\EditablePost.tsx",
   "PreviewInSolutionExplorer": false
 }

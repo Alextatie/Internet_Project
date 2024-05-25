@@ -4,10 +4,11 @@ import React, { useState, FC } from 'react';
 import StudentModel, { Student, Editable } from '../../models/StudentModel';
 import PostModel, { Post } from '../../models/PostModel';
 import styles from '../../styles';
+import ActivityIndicator from '../Lottie';
 
 const EditablePost: FC<{ route: any, navigation: any }> = ({ navigation, route }) => {
     let [message, messageInput] = React.useState('');
-
+    const [loading, setLoading] = useState(false)
     const onEdit = async () => {
         try {
             navigation.navigate("EditedPost", { id: route.params.id })
@@ -17,7 +18,9 @@ const EditablePost: FC<{ route: any, navigation: any }> = ({ navigation, route }
     }
     const onDelete = async () => {
         try {
+            setLoading(true)
             await PostModel.deletePost(route.params.id)
+            setLoading(false)
             navigation.goBack()
         } catch (err) {
             console.log(err)
@@ -30,10 +33,15 @@ const EditablePost: FC<{ route: any, navigation: any }> = ({ navigation, route }
     }
 
     return (
+        loading ?
+            <ActivityIndicator visible={true} />
+            :
         <View style={mystyles.container}>
-            <Image source={require('../../assets/PreLogin.png')} style={mystyles.image} />
+                {StudentModel.getCurrent().avatar_url == "" && <Image style={styles.avatar2} source={require('../../assets/thumbs-up-cat.gif')} />}
+                {StudentModel.getCurrent().avatar_url != "" && <Image style={styles.avatar2} source={{ uri: StudentModel.getCurrent().avatar_url }} />}
             <Text style={mystyles.title}>{StudentModel.getCurrent().name}:</Text>
-            <Text style={styles.textInput2}>{route.params.message}</Text>
+                {route.params.type == "1" && <Text style={styles.textInput2}>{route.params.message}</Text>}
+                {route.params.type == "2" && <View style={styles.textInput2}><Image style={styles.avatar4} source={{ uri: route.params.message }} /></View>}
             <View style={styles.buttons}>
                 <View style={{ flexDirection: "row" }}>
                 <TouchableOpacity style={styles.button8} onPress={onEdit}>

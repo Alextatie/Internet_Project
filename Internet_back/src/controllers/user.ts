@@ -59,6 +59,12 @@ class UserController extends BaseController<Iuser>{
                     password: await bcrypt.hash(req.body.password, await bcrypt.genSalt(10))
                 }
                 break;
+            case 4:
+                update = {
+                    avatar_url: req.body.avatar_url
+                }
+                console.log(req.body.avatar_url)
+                break;
         }
         super.put(req, res, filter, update);
     }

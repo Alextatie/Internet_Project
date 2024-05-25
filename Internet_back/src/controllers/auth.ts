@@ -39,7 +39,8 @@ const register = async (req: Request, res: Response) => {
                     _id: req.body._id,
                     name: req.body.name,
                     email: req.body.email,
-                    password: await bcrypt.hash(req.body.password,await bcrypt.genSalt(10))
+                    password: await bcrypt.hash(req.body.password, await bcrypt.genSalt(10)),
+                    avatar_url: ""
                 });
                 res.status(200).send("Registered:\n" + newUser);
                 console.log("Registered:\n" + newUser);

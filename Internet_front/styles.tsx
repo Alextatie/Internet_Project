@@ -13,7 +13,7 @@ import { StyleSheet} from 'react-native';
             marginHorizontal: 5,
             marginVertical: 2,
             borderColor: "#75B8D4",
-            elevation:7
+            elevation: 7
             
         },
         info: {
@@ -24,6 +24,23 @@ import { StyleSheet} from 'react-native';
         avatar: {
             height: 65,
             width: 65,
+            margin: 5
+        },
+        avatar2: {
+            height: 200,
+            width: 200,
+            margin: 5,
+            alignSelf:"center"
+        },
+        avatar3: {
+            height: 30,
+            width: 30,
+            margin: 5,
+            alignSelf: "center"
+        },
+        avatar4: {
+            height: 120,
+            width: 120,
             margin: 5
         },
         name: {

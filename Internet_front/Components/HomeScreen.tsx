@@ -3,6 +3,7 @@ import { FC, useState, useEffect} from "react";
 import styles from '../styles';
 import StudentListRow from './StudentListRow';
 import StudentModel, { Student } from '../models/StudentModel';
+import ActivityIndicator from './Lottie';
 
 const HomeScreen: FC<{ navigation: any }> = ({ navigation }) => {
     const onLogout = async () => {
@@ -29,10 +30,8 @@ const HomeScreen: FC<{ navigation: any }> = ({ navigation }) => {
         <View style={{
             flex: 1, alignItems: 'center', justifyContent: 'space-between', marginTop:75
         }}>
-            
-
                 <View>
-                    <Image source={require('../assets/home.png')} style={styles.image} />
+                    <Image source={require('../assets/Home.png')} style={styles.image} />
                 </View>
                 <View style={styles.spacer2}>
                 </View>

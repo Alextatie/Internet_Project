@@ -1,10 +1,12 @@
 //import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, Image, TouchableOpacity} from 'react-native';
-import React, {  FC } from 'react';
+import React, {  FC, useState } from 'react';
 import StudentModel, { Login } from '../models/StudentModel';
 import styles from '../styles';
+import ActivityIndicator from './Lottie';
 
 const LoginScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
+    const [loading, setLoading] = useState(false)
     const [email, emailInput] = React.useState('');
     const [password, passwordInput] = React.useState('');
 
@@ -15,10 +17,13 @@ const LoginScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }
         }
         let res
         try {
+            setLoading(true)
             res = await StudentModel.login(login);
         } catch (err) {
+            setLoading(false)
             console.log(err)
         }
+        setLoading(false)
         if (res.status == 400) {
             alert("Wrong email or password")
             console.log("Wrong email or password")
@@ -37,29 +42,34 @@ const LoginScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }
     }
 
     return (
-        <View style={mystyles.container}>
-            <Image source={require('../assets/PreLogin.png')} style={mystyles.image} />
-            <TextInput
-                style={styles.textInput}
-                onChangeText={emailInput}
-                value={email}
-                placeholder={"email"}
-            />
-            <TextInput
-                style={styles.textInput}
-                onChangeText={passwordInput}
-                value={password}
-                placeholder={"password"}
-            />
-            <View style={styles.buttons}>
-                <TouchableOpacity style={styles.button} onPress={onLogin}>
-                    <Text style={styles.buttonText1}>Login</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={onBack}>
-                    <Text style={styles.buttonText1}>Back</Text>
-                </TouchableOpacity>
-            </View>
-        </View>
+
+                loading ?
+                    <ActivityIndicator visible={true} />
+                    :
+                    <View >
+                        <Image source={require('../assets/PreLogin.png')} style={mystyles.image} />
+                        <TextInput
+                            style={styles.textInput}
+                            onChangeText={emailInput}
+                            value={email}
+                            placeholder={"email"}
+                        />
+                        <TextInput
+                            style={styles.textInput}
+                            onChangeText={passwordInput}
+                            value={password}
+                            placeholder={"password"}
+                        />
+                        <View style={styles.buttons}>
+                            <TouchableOpacity style={styles.button} onPress={onLogin}>
+                                <Text style={styles.buttonText1}>Login</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={styles.button} onPress={onBack}>
+                                <Text style={styles.buttonText1}>Back</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+
     );
 }
 

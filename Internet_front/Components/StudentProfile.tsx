@@ -2,12 +2,14 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, Button, Alert, TextInp
 import React, { useState, FC, useEffect } from 'react';
 import StudentModel from '../models/StudentModel';
 import styles from '../styles';
+import ActivityIndicator from './Lottie';
 
 const StudentProfile: FC<{ route: any, navigation: any }> = ({ route, navigation }) => {
  
     return (
         <View style={mystyles.container}>
-            <Image style={mystyles.avatar} source={require('../assets/thumbs-up-cat.gif')} />
+            {route.params.avatar_url == "" && <Image style={styles.avatar2} source={require('../assets/thumbs-up-cat.gif')} />}
+            {route.params.avatar_url != "" && <Image style={styles.avatar2} source={{ uri: route.params.avatar_url }} />}
             <View style={mystyles.panel}>
                 <View>
                 <Text style={mystyles.input2}>{"name:  " }</Text>

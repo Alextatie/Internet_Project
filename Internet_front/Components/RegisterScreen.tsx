@@ -1,10 +1,12 @@
 //import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, Image, TouchableOpacity } from 'react-native';
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import StudentModel, { Student } from '../models/StudentModel';
 import styles from '../styles';
+import ActivityIndicator from './Lottie';
 
-const RegisterScreen: FC<{ route?: any,navigation: any }> = ({ navigation,route }) => {
+const RegisterScreen: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
+    const [loading, setLoading] = useState(false)
     const [name, nameInput] = React.useState('');
     const [id, idInput] = React.useState('');
     const [email, emailInput] = React.useState('');
@@ -15,19 +17,27 @@ const RegisterScreen: FC<{ route?: any,navigation: any }> = ({ navigation,route 
         if ((id == "") || (name == "") || (email == "") || (password == "")) {
             console.log("Cannot have empty fields")
             alert("Cannot have empty fields")
+            return
             //return navigation.navigate('PreLogin');
         }
-        else if (await StudentModel.exists(id, "id")==true) {
-            console.log("ID already exists "+id)
-            alert("ID already exists")
-            //return navigation.navigate('PreLogin');
-        }
-        else if (await StudentModel.exists(email, "email") == true) {
-            console.log("Email already exists")
-            alert("Email already exists")
-            //return navigation.navigate('PreLogin');
-        }
+
         else {
+            setLoading(true)
+            if (await StudentModel.exists(id, "id") == true) {
+                console.log("ID already exists " + id)
+                alert("ID already exists")
+                setLoading(false)
+                return
+            }
+            if (await StudentModel.exists(email, "email") == true) {
+                console.log("Email already exists")
+                alert("Email already exists")
+                setLoading(false)
+                return
+            }
+        }
+
+         {
             const student: Student = {
                 name: name,
                 id: id,
@@ -36,12 +46,15 @@ const RegisterScreen: FC<{ route?: any,navigation: any }> = ({ navigation,route 
                 password: password
             }
             try {
+                setLoading(true)
+                await StudentModel.addStudent(student);
                 console.log("Register: " + student.id)
                 alert("Account registered: " + student.id)
-                await StudentModel.addStudent(student);
             } catch (err) {
+                setLoading(false)
                 console.log(err)
             }
+            setLoading(false)
             navigation.navigate('Home');
         }
     }
@@ -51,41 +64,44 @@ const RegisterScreen: FC<{ route?: any,navigation: any }> = ({ navigation,route 
     }
 
     return (
-        <View style={mystyles.container}>
-            <Image source={require('../assets/PreLogin.png')} style={mystyles.image} />
-            <TextInput
-                style={styles.textInput}
-                onChangeText={nameInput}
-                value={name}
-                placeholder={"name"}
-            />
-            <TextInput
-                style={styles.textInput}
-                onChangeText={idInput}
-                value={id}
-                placeholder={"id"}
-            />
-            <TextInput
-                style={styles.textInput}
-                onChangeText={emailInput}
-                value={email}
-                placeholder={"email"}
-            />
-            <TextInput
-                style={styles.textInput}
-                onChangeText={passwordInput}
-                value={password}
-                placeholder={"password"}
-            />
-            <View style={styles.buttons}>
-                <TouchableOpacity style={styles.button} onPress={onSave}>
-                    <Text style={styles.buttonText1}>Save</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={onBack}>
-                    <Text style={styles.buttonText1}>Back</Text>
-                </TouchableOpacity>
-            </View>
-        </View>
+                loading ?
+                    <ActivityIndicator visible={true} />
+                    :
+                    <View>
+                        <Image source={require('../assets/PreLogin.png')} style={mystyles.image} />
+                        <TextInput
+                            style={styles.textInput}
+                            onChangeText={nameInput}
+                            value={name}
+                            placeholder={"name"}
+                        />
+                        <TextInput
+                            style={styles.textInput}
+                            onChangeText={idInput}
+                            value={id}
+                            placeholder={"id"}
+                        />
+                        <TextInput
+                            style={styles.textInput}
+                            onChangeText={emailInput}
+                            value={email}
+                            placeholder={"email"}
+                        />
+                        <TextInput
+                            style={styles.textInput}
+                            onChangeText={passwordInput}
+                            value={password}
+                            placeholder={"password"}
+                        />
+                        <View style={styles.buttons}>
+                            <TouchableOpacity style={styles.button} onPress={onSave}>
+                                <Text style={styles.buttonText1}>Save</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={styles.button} onPress={onBack}>
+                                <Text style={styles.buttonText1}>Back</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
     );
 }
 

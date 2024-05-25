@@ -3,27 +3,36 @@ import { StyleSheet, Text, TextInput, View, Image, StatusBar, TouchableOpacity, 
 import React, { useState, FC } from 'react';
 import StudentModel, { Student, Editable } from '../../models/StudentModel';
 import styles from '../../styles';
+import ActivityIndicator from '../Lottie';
 
 const EmailEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
     let [email, emailInput] = React.useState('');
+    const [loading, setLoading] = useState(false)
 
     const onSave = async () => {
         try {
             if (email == "") {
                 console.log("Cannot have empty fields")
                 alert("Cannot have empty fields")
-                //return navigation.navigate('PreLogin');
-            }
-            else if ((await StudentModel.exists(email, "email") == true) && (email != StudentModel.getCurrent().email)) {
-                console.log("Email already exists")
-                alert("Email already exists")
+                return
                 //return navigation.navigate('PreLogin');
             }
             else {
-                console.log("Editing " + StudentModel.getCurrent().id)
-                await StudentModel.Edit(email, "email")
+                setLoading(true)
+                if ((await StudentModel.exists(email, "email") == true) && (email != StudentModel.getCurrent().email)) {
+                    setLoading(false)
+                    console.log("Email already exists")
+                    alert("Email already exists")
+                    return
+                    //return navigation.navigate('PreLogin');
+                }
             }
+            setLoading(true)
+            await StudentModel.Edit(email, "email")
+            console.log("Editing " + StudentModel.getCurrent().id)
+            setLoading(false)
         } catch (err) {
+            setLoading(false)
             console.log(err)
         }
         navigation.navigate('EditableProfile', {
@@ -38,8 +47,12 @@ const EmailEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }) 
     }
 
     return (
+        loading ?
+            <ActivityIndicator visible={true} />
+            :
         <View style={mystyles.container}>
-            <Image source={require('../../assets/PreLogin.png')} style={mystyles.image} />
+                {StudentModel.getCurrent().avatar_url == "" && <Image style={styles.avatar2} source={require('../../assets/thumbs-up-cat.gif')} />}
+                {StudentModel.getCurrent().avatar_url != "" && <Image style={styles.avatar2} source={{ uri: StudentModel.getCurrent().avatar_url }} />}
             <Text style={mystyles.title}>Old Email: {StudentModel.getCurrent().email}</Text>
             <TextInput
                 style={styles.textInput}
@@ -62,8 +75,7 @@ const EmailEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }) 
 const mystyles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "white",
-        marginTop: 80,
+        backgroundColor: "white"
     },
     image: {
         alignSelf: "center",

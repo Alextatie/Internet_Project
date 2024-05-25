@@ -2,8 +2,25 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, Button, Alert, TextInp
 import React, { useState, FC, useEffect } from 'react';
 import StudentModel from '../models/StudentModel';
 import styles from '../styles';
+import ActivityIndicator from './Lottie';
+import * as ImagePicker from 'expo-image-picker';
 
 const EditableProfile: FC<{ route: any, navigation: any }> = ({ route, navigation }) => {
+    const [imageURI, setImageURI] = useState("")
+    const requestPermission = async () => {
+        try {
+            const res = await ImagePicker.requestCameraPermissionsAsync()
+            if (!res.granted) {
+                alert("You need to allow camera permission.")
+            }
+        } catch (err) {
+            console.log(err)
+        }
+    }
+    useEffect(() => {
+        requestPermission()
+    },[])
+
     const onName = async () => {
         console.log("Edit Name")
         navigation.navigate('NameEdit');
@@ -16,8 +33,32 @@ const EditableProfile: FC<{ route: any, navigation: any }> = ({ route, navigatio
         console.log("Edit Password")
         navigation.navigate('PasswordEdit');
     }
-    const onAvatar = async () => {
-        console.log("Edit Avatar")
+    const onCamera = async () => {
+        console.log("Open Camera")
+        try {
+
+            const res = await ImagePicker.launchCameraAsync()
+            if (!res.canceled && res.assets.length > 0) {
+
+                await StudentModel.Edit(res.assets[0].uri, "avatar")
+            }
+        } catch (err) {
+            console.log(err)
+        }
+        //navigation.navigate('NameEdit');
+    }
+    const onGallery = async () => {
+        console.log("Open Gallery")
+        try {
+
+            const res = await ImagePicker.launchImageLibraryAsync()
+            if (!res.canceled && res.assets.length > 0) {
+
+                await StudentModel.Edit(res.assets[0].uri, "avatar")
+            }
+        } catch (err) {
+            console.log(err)
+        }
         //navigation.navigate('NameEdit');
     }
     const onDelete = async () => {
@@ -32,10 +73,16 @@ const EditableProfile: FC<{ route: any, navigation: any }> = ({ route, navigatio
     return (
         <View style={mystyles.container}>
             <View style={mystyles.row}>
-                <Image style={mystyles.avatar} source={require('../assets/thumbs-up-cat.gif')} />
-                <TouchableOpacity style={styles.button3} onPress={onAvatar}>
-                    <Text style={styles.buttonText4}>Edit</Text>
+                {StudentModel.getCurrent().avatar_url == "" && <Image style={styles.avatar2} source={require('../assets/thumbs-up-cat.gif')} />}
+                {StudentModel.getCurrent().avatar_url != "" && <Image style={styles.avatar2} source={{ uri: StudentModel.getCurrent().avatar_url }} />}
+                <View>
+                <TouchableOpacity  onPress={onCamera}>
+                        <Image style={mystyles.icon} source={require('../assets/camera.png')} />
                 </TouchableOpacity>
+                <TouchableOpacity  onPress={onGallery}>
+                        <Image style={mystyles.icon} source={require('../assets/gallery.png')} />
+                </TouchableOpacity>
+                </View>
             </View>
             <View style={mystyles.row}>
                 <View style={mystyles.panel}>
@@ -141,6 +188,10 @@ const mystyles = StyleSheet.create({
     },
     buttonText: {
         padding: 10
+    },
+   icon: {
+       height: 36,
+       width: 36
     }
 
 });

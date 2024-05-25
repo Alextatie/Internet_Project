@@ -3,17 +3,22 @@ import { StyleSheet, Text, TextInput, View, Image, StatusBar, TouchableOpacity, 
 import React, { useState, FC } from 'react';
 import StudentModel, { Student, Editable } from '../../models/StudentModel';
 import styles from '../../styles';
+import ActivityIndicator from '../Lottie';
 
 const DeleteUser: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
     let [email, emailInput] = React.useState('');
+    const [loading, setLoading] = useState(false)
 
     const onDelete= async () => {
         try {
-            StudentModel.deleteAccount()
-            navigation.navigate('PreLogin')
+            setLoading(true)
+            await StudentModel.deleteAccount()
         } catch (err) {
+            setLoading(false)
             console.log(err)
         }
+        setLoading(false)
+        navigation.navigate('PreLogin')
     }
     const onBack = () => {
         console.log("Back")
@@ -21,6 +26,9 @@ const DeleteUser: FC<{ route?: any, navigation: any }> = ({ navigation, route })
     }
 
     return (
+        loading ?
+            <ActivityIndicator visible={true} />
+            :
         <View style={mystyles.container}>
             <Text style={{ color: "red", fontSize: 340, textAlign: "center" }}>!!!</Text>
             <Text style={{ color: "red", fontSize: 40, textAlign: "center", marginHorizontal: 40, marginBottom:80 }}>Are you sure you want to delete this account?</Text>

@@ -4,7 +4,10 @@ import StudentModel, { Student, Editable } from '../models/StudentModel';
 export type Post = {
     id: string,
     message: string,
-    sender: string
+    sender: string,
+    senderName: string,
+    sender_avatar: string,
+    type: string
 }
 
 //let data = Array<Post>()
@@ -22,7 +25,10 @@ const getAllPosts = async (id: string) => {
             const st: Post = {
                 id: obj._id,
                 message: obj.message,
-                sender: obj.sender
+                sender: obj.sender,
+                senderName: obj.senderName,
+                sender_avatar: obj.sender_avatar,
+                type: obj.type
             }
             data.push(st)
         });
@@ -30,13 +36,19 @@ const getAllPosts = async (id: string) => {
     console.log(data.length + " posts loaded")
     return data
 }
-const postPost = async (msg:string) => {
+const postPost = async (msg:string,type:string) => {
     try {
         await StudentModel.refresh()
         console.log("Posting post")
         const data = {
             message: msg,
-            sender: StudentModel.getCurrent().id
+            sender: StudentModel.getCurrent().id,
+            senderName: StudentModel.getCurrent().name,
+            sender_avatar: StudentModel.getCurrent().avatar_url,
+            type: type
+        }
+        if ((StudentModel.getCurrent().avatar_url == "") || (StudentModel.getCurrent().avatar_url == undefined)) {
+            data.sender_avatar="x"
         }
         await UserApi.postPost(data)
     } catch (err) {
@@ -44,11 +56,12 @@ const postPost = async (msg:string) => {
     }
 }
 
-const editPost = async (id:string,msg: string) => {
+const editPost = async (id:string,msg: string,type:string) => {
     try {
         await StudentModel.refresh()
         const data = {
-            message: msg
+            message: msg,
+            type: type
         }
         return await UserApi.editPost(id, data)
     } catch (err) {
