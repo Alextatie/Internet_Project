@@ -18,7 +18,7 @@ const EditedPost: FC<{ route?: any, navigation: any }> = ({ navigation, route })
             }
             else {
                 setLoading(true)
-                await PostModel.editPost(route.params.id, message,"1")
+                await PostModel.editPost(route.params.id, message, "1")
                 setLoading(false)
                 console.log("Editing post from:  " + StudentModel.getCurrent().id)
                 return navigation.navigate('UserPosts');
@@ -36,6 +36,7 @@ const EditedPost: FC<{ route?: any, navigation: any }> = ({ navigation, route })
             if (!res.canceled && res.assets.length > 0) {
                 //console.log("id: " + route.params.id, route.params.sender, route.params.message, route.params.sender_avatar)
                 await PostModel.editPost(route.params.id, res.assets[0].uri, "2")
+                //await PostModel.updateAvatar()
                 return navigation.navigate('UserPosts');
             }
         } catch (err) {
@@ -50,6 +51,7 @@ const EditedPost: FC<{ route?: any, navigation: any }> = ({ navigation, route })
             const res = await ImagePicker.launchImageLibraryAsync()
             if (!res.canceled && res.assets.length > 0) {
                 await PostModel.editPost(route.params.id, res.assets[0].uri, "2")
+                //await PostModel.updateAvatar()
                 return navigation.navigate('UserPosts');
             }
         } catch (err) {

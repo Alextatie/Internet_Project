@@ -53,8 +53,8 @@ const UserPosts: FC<{ navigation: any }> = ({ navigation }) => {
                 <PostListRow
                     id={item.id}
                     message={item.message}
-                    sender={item.senderName}
-                    sender_avatar={item.sender_avatar}
+                    sender={StudentModel.getCurrent().name}
+                    sender_avatar={StudentModel.getCurrent().avatar_url}
                     type={item.type}
 
                     onItemSelected={onItemSelected}

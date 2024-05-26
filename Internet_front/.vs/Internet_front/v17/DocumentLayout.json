@@ -1,101 +1,121 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\",
+  "WorkspaceRootPath": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\EditablePost.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\EditablePost.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\Post.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\Post.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\UserPosts.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\UserPosts.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\EditableProfile.tsx||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\EditableProfile.tsx||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\ForumScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\ForumScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\EditedPost.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\EditedPost.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\PostScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\PostScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\styles.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\PostListRow.tsx||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\PostListRow.tsx||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\api\\UserApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\UserApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\api\\ClientApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\ClientApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\models\\PostModel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\models\\PostModel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\PostModel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\PasswordEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\edit\\PasswordEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\NameEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\edit\\NameEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\EmailEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\edit\\EmailEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\DeleteUser.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\edit\\DeleteUser.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentList.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentList.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentListRow.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentListRow.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\HomeScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\HomeScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\models\\StudentModel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\models\\StudentModel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:models\\StudentModel.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\PreLoginScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\ForumScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\ForumScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\LoginScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\LoginScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\HomeScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\HomeScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\EditableProfile.tsx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\EditableProfile.tsx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\UserPosts.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\UserPosts.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\UserApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\UserApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\EditedPost.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\EditedPost.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\PostScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\PostScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\NameEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\edit\\NameEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\Post.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\Post.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\EditablePost.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\EditablePost.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\PostListRow.tsx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\post\\PostListRow.tsx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\Lottie.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\Lottie.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\DeleteUser.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\edit\\DeleteUser.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\EmailEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\edit\\EmailEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\ClientApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\ClientApi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\temp||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:temp||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\RegisterScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\RegisterScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\PreLoginScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\PreLoginScreen.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\styles.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\PasswordEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\edit\\PasswordEdit.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentList.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentList.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentListRow.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Components\\StudentListRow.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -106,54 +126,210 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "EditedPost.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\EditedPost.tsx",
-              "RelativeDocumentMoniker": "Components\\post\\EditedPost.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\EditedPost.tsx",
-              "RelativeToolTip": "Components\\post\\EditedPost.tsx",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADgAAAAJAAAA",
+              "Title": "EditableProfile.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\EditableProfile.tsx",
+              "RelativeDocumentMoniker": "Components\\EditableProfile.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\EditableProfile.tsx",
+              "RelativeToolTip": "Components\\EditableProfile.tsx",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAACcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-25T15:37:35.235Z",
+              "WhenOpened": "2024-05-19T13:13:54.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserApi.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\UserApi.tsx",
+              "RelativeDocumentMoniker": "api\\UserApi.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\UserApi.tsx",
+              "RelativeToolTip": "api\\UserApi.tsx",
+              "ViewState": "AQIAACkAAAAAAAAAAADwv1wAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-20T00:40:33.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EditablePost.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\EditablePost.tsx",
-              "RelativeDocumentMoniker": "Components\\post\\EditablePost.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\EditablePost.tsx",
-              "RelativeToolTip": "Components\\post\\EditablePost.tsx",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACcAAAAyAAAA",
+              "Title": "PostModel.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\models\\PostModel.ts",
+              "RelativeDocumentMoniker": "models\\PostModel.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\models\\PostModel.ts",
+              "RelativeToolTip": "models\\PostModel.ts",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-23T09:30:45.618Z",
+              "WhenOpened": "2024-05-24T16:57:33.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UserPosts.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\UserPosts.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\UserPosts.tsx",
               "RelativeDocumentMoniker": "Components\\post\\UserPosts.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\UserPosts.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\UserPosts.tsx",
               "RelativeToolTip": "Components\\post\\UserPosts.tsx",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAByAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADIAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-05-23T08:31:46.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NameEdit.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\NameEdit.tsx",
+              "RelativeDocumentMoniker": "Components\\edit\\NameEdit.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\NameEdit.tsx",
+              "RelativeToolTip": "Components\\edit\\NameEdit.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-18T11:17:02.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\HomeScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\HomeScreen.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\HomeScreen.tsx",
+              "RelativeToolTip": "Components\\HomeScreen.tsx",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-24T18:11:08.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditedPost.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\EditedPost.tsx",
+              "RelativeDocumentMoniker": "Components\\post\\EditedPost.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\EditedPost.tsx",
+              "RelativeToolTip": "Components\\post\\EditedPost.tsx",
+              "ViewState": "AQIAACYAAAAAAAAAAADwvzQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-25T15:37:35.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Post.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\Post.tsx",
+              "RelativeDocumentMoniker": "Components\\post\\Post.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\Post.tsx",
+              "RelativeToolTip": "Components\\post\\Post.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-23T09:23:39.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PostScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\PostScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\post\\PostScreen.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\PostScreen.tsx",
+              "RelativeToolTip": "Components\\post\\PostScreen.tsx",
+              "ViewState": "AQIAACYAAAAAAAAAAADwvzQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-18T11:17:37.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ForumScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\ForumScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\post\\ForumScreen.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\ForumScreen.tsx",
+              "RelativeToolTip": "Components\\post\\ForumScreen.tsx",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-18T11:17:19.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\LoginScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\LoginScreen.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\LoginScreen.tsx",
+              "RelativeToolTip": "Components\\LoginScreen.tsx",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAC0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-25T22:59:55.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentModel.ts",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\models\\StudentModel.ts",
+              "RelativeDocumentMoniker": "models\\StudentModel.ts",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\models\\StudentModel.ts",
+              "RelativeToolTip": "models\\StudentModel.ts",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAmwLUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-20T00:37:53.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EditablePost.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\EditablePost.tsx",
+              "RelativeDocumentMoniker": "Components\\post\\EditablePost.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\EditablePost.tsx",
+              "RelativeToolTip": "Components\\post\\EditablePost.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-23T09:30:45.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PostListRow.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\PostListRow.tsx",
+              "RelativeDocumentMoniker": "Components\\post\\PostListRow.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\post\\PostListRow.tsx",
+              "RelativeToolTip": "Components\\post\\PostListRow.tsx",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-20T00:48:06.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Lottie.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\Lottie.tsx",
+              "RelativeDocumentMoniker": "Components\\Lottie.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\Lottie.tsx",
+              "RelativeToolTip": "Components\\Lottie.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-25T23:02:22.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
               "Title": "DeleteUser.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\DeleteUser.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\DeleteUser.tsx",
               "RelativeDocumentMoniker": "Components\\edit\\DeleteUser.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\DeleteUser.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\DeleteUser.tsx",
               "RelativeToolTip": "Components\\edit\\DeleteUser.tsx",
               "ViewState": "AQIAACEAAAAAAAAAAAAAABQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
@@ -162,141 +338,128 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ForumScreen.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\ForumScreen.tsx",
-              "RelativeDocumentMoniker": "Components\\post\\ForumScreen.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\ForumScreen.tsx",
-              "RelativeToolTip": "Components\\post\\ForumScreen.tsx",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAABdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-18T11:17:19.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Post.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\Post.tsx",
-              "RelativeDocumentMoniker": "Components\\post\\Post.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\Post.tsx",
-              "RelativeToolTip": "Components\\post\\Post.tsx",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAACYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-23T09:23:39.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PostScreen.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\PostScreen.tsx",
-              "RelativeDocumentMoniker": "Components\\post\\PostScreen.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\PostScreen.tsx",
-              "RelativeToolTip": "Components\\post\\PostScreen.tsx",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEcAAACXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-18T11:17:37.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "EmailEdit.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\EmailEdit.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\EmailEdit.tsx",
               "RelativeDocumentMoniker": "Components\\edit\\EmailEdit.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\EmailEdit.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\EmailEdit.tsx",
               "RelativeToolTip": "Components\\edit\\EmailEdit.tsx",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAE0AAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-05-24T18:11:12.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "NameEdit.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\NameEdit.tsx",
-              "RelativeDocumentMoniker": "Components\\edit\\NameEdit.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\NameEdit.tsx",
-              "RelativeToolTip": "Components\\edit\\NameEdit.tsx",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAEQAAAAgAAAA",
+              "DocumentIndex": 17,
+              "Title": "ClientApi.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\ClientApi.tsx",
+              "RelativeDocumentMoniker": "api\\ClientApi.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\api\\ClientApi.tsx",
+              "RelativeToolTip": "api\\ClientApi.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-18T11:17:02.307Z",
+              "WhenOpened": "2024-05-25T14:52:10.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwBcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-25T23:00:18.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "temp",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\temp",
+              "RelativeDocumentMoniker": "temp",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\temp",
+              "RelativeToolTip": "temp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-25T23:00:48.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegisterScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\RegisterScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\RegisterScreen.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\RegisterScreen.tsx",
+              "RelativeToolTip": "Components\\RegisterScreen.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-25T23:00:04.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "PasswordEdit.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\PasswordEdit.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\PasswordEdit.tsx",
               "RelativeDocumentMoniker": "Components\\edit\\PasswordEdit.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\edit\\PasswordEdit.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\edit\\PasswordEdit.tsx",
               "RelativeToolTip": "Components\\edit\\PasswordEdit.tsx",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAEMAAAAQAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAIBJwEMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-05-25T15:13:44.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PostListRow.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\PostListRow.tsx",
-              "RelativeDocumentMoniker": "Components\\post\\PostListRow.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\post\\PostListRow.tsx",
-              "RelativeToolTip": "Components\\post\\PostListRow.tsx",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAABfAAAA",
+              "DocumentIndex": 22,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\App.tsx",
+              "RelativeDocumentMoniker": "App.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\App.tsx",
+              "RelativeToolTip": "App.tsx",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-20T00:48:06.254Z",
+              "WhenOpened": "2024-05-24T16:54:13.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EditableProfile.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\EditableProfile.tsx",
-              "RelativeDocumentMoniker": "Components\\EditableProfile.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\EditableProfile.tsx",
-              "RelativeToolTip": "Components\\EditableProfile.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "DocumentIndex": 21,
+              "Title": "PreLoginScreen.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\PreLoginScreen.tsx",
+              "RelativeDocumentMoniker": "Components\\PreLoginScreen.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\PreLoginScreen.tsx",
+              "RelativeToolTip": "Components\\PreLoginScreen.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-19T13:13:54.529Z",
+              "WhenOpened": "2024-05-18T10:59:24.406Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PostModel.ts",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\models\\PostModel.ts",
-              "RelativeDocumentMoniker": "models\\PostModel.ts",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\models\\PostModel.ts",
-              "RelativeToolTip": "models\\PostModel.ts",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAADkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-24T16:57:33.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "StudentProfile.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentProfile.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentProfile.tsx",
               "RelativeDocumentMoniker": "Components\\StudentProfile.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentProfile.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentProfile.tsx",
               "RelativeToolTip": "Components\\StudentProfile.tsx",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAB5AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAsAAAB5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-05-18T11:02:15.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 23,
               "Title": "styles.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\styles.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\styles.tsx",
               "RelativeDocumentMoniker": "styles.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\styles.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\styles.tsx",
               "RelativeToolTip": "styles.tsx",
               "ViewState": "AQIAABcAAAAAAAAAAAAgwCoAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
@@ -305,115 +468,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "StudentList.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentList.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentList.tsx",
               "RelativeDocumentMoniker": "Components\\StudentList.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentList.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentList.tsx",
               "RelativeToolTip": "Components\\StudentList.tsx",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAgAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAIBJwBIAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-05-24T18:30:04.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "StudentListRow.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentListRow.tsx",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentListRow.tsx",
               "RelativeDocumentMoniker": "Components\\StudentListRow.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\StudentListRow.tsx",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\Components\\StudentListRow.tsx",
               "RelativeToolTip": "Components\\StudentListRow.tsx",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAXAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBsAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-05-24T18:29:47.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClientApi.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\api\\ClientApi.tsx",
-              "RelativeDocumentMoniker": "api\\ClientApi.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\api\\ClientApi.tsx",
-              "RelativeToolTip": "api\\ClientApi.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-25T14:52:10.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "HomeScreen.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\HomeScreen.tsx",
-              "RelativeDocumentMoniker": "Components\\HomeScreen.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\HomeScreen.tsx",
-              "RelativeToolTip": "Components\\HomeScreen.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-24T18:11:08.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserApi.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\api\\UserApi.tsx",
-              "RelativeDocumentMoniker": "api\\UserApi.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\api\\UserApi.tsx",
-              "RelativeToolTip": "api\\UserApi.tsx",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAEEAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-20T00:40:33.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "StudentModel.ts",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\models\\StudentModel.ts",
-              "RelativeDocumentMoniker": "models\\StudentModel.ts",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\models\\StudentModel.ts",
-              "RelativeToolTip": "models\\StudentModel.ts",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAmwD8AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-20T00:37:53.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "PreLoginScreen.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\PreLoginScreen.tsx",
-              "RelativeDocumentMoniker": "Components\\PreLoginScreen.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\Components\\PreLoginScreen.tsx",
-              "RelativeToolTip": "Components\\PreLoginScreen.tsx",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-18T10:59:24.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "App.tsx",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\App.tsx",
-              "RelativeDocumentMoniker": "App.tsx",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\App.tsx",
-              "RelativeToolTip": "App.tsx",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-05-24T16:54:13.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "app.json",
-              "DocumentMoniker": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\app.json",
+              "DocumentMoniker": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\app.json",
               "RelativeDocumentMoniker": "app.json",
-              "ToolTip": "C:\\Users\\alext\\Desktop\\Internet_Project\\Internet_front\\app.json",
+              "ToolTip": "C:\\Users\\AlexTa\\Desktop\\Final_Project\\Internet_front\\app.json",
               "RelativeToolTip": "app.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-20T05:59:14.803Z"
+              "WhenOpened": "2024-05-20T05:59:14.803Z",
+              "EditorCaption": ""
             }
           ]
         }

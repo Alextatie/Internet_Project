@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "jest --detectOpenHandles --forceExit --runInBand",
-    "authtest": "jest --detectOpenHandles --forceExit ./src/tests/auth.test.ts",
+    "usertest": "jest --detectOpenHandles --forceExit ./src/tests/user.test.ts",
     "posttest": "jest --detectOpenHandles --forceExit ./src/tests/post.test.ts",
-    "studenttest": "jest --detectOpenHandles --forceExit ./src/tests/student.test.ts",
+    "loader": "jest --detectOpenHandles --forceExit ./src/loader.test.ts",
     "start": "tsc && node dist/src/server.js",
     "lint": "eslint . --ext .ts",
     "devstart": "nodemon ./src/server.ts"

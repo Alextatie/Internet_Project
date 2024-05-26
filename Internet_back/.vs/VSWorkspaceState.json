@@ -2,12 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\common",
-    "\\src\\controllers",
     "\\src\\models",
-    "\\src\\routes",
-    "\\src\\tests"
+    "\\src\\routes"
   ],
-  "SelectedNode": "\\src\\controllers\\post.ts",
+  "SelectedNode": "\\.env",
   "PreviewInSolutionExplorer": false
 }

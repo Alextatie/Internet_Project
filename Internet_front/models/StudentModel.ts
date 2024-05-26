@@ -148,6 +148,7 @@ const getCurrent = () => {
 
 
 const Edit = async (string: string, type: string) => {
+    await refresh()
     console.log("Edited: " + currentUser.id)
     let data
     switch (type) {

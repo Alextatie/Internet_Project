@@ -26,7 +26,7 @@ const register = async (req: Request, res: Response) => {
         try {
             let user = await User.findOne({email: req.body.email});
             if (user) {
-                res.status(400).send("Email already in use");
+                res.status(400).send("Email already in use: " + req.body.email);
                 console.log("Email already in use");
             }
             user = await User.findOne({ _id: req.body._id });
@@ -100,6 +100,7 @@ const login = async (req: Request, res: Response) => {
                     //user.tokens = user.tokens.filter(token => token != refreshToken);
                     user.tokens.push(refreshToken)
                 }
+                console.log("Login: " + user._id)
                 console.log({
                     accessToken: accessToken,
                     refreshToken: refreshToken
@@ -120,33 +121,33 @@ const login = async (req: Request, res: Response) => {
 
 const refresh = async (req: Request, res: Response) => {
     console.log('refresh')
+    console.log(req.headers['refreshtoken'])
     const oldrefreshToken = req.headers['refreshtoken']
     if (oldrefreshToken == null) {
         console.log('0')
-        res.status(401).send("Missing tokenZZZ");
+        res.status(401).send("Missing token");
     }
     else {
         jwt.verify(oldrefreshToken, process.env.REFRESH_TOKEN_SECRET, async (error, userInfo: { _id: string }) => {
-            //console.log('1')
+            console.log('1')
             if (error) {
-                //console.log('2')
+                console.log('2')
                 return res.status(403).send("Invalid token");
             }
             else {
-                //console.log('3')
+                console.log('3')
                 try {
                     const user = await User.findById(userInfo._id);
-                    if (user == null || user.tokens == null || user.tokens != oldrefreshToken) {
-                        console.log(user.tokens)
+                    if (user == null || user.tokens == null) {
                         if (user.tokens != null) {
-                            //console.log('5')
+                            console.log('5')
                             user.tokens = [];
                             await user.save();
                         }
                         return  res.status(403).send("Invalid token");
                     }
                     else {
-                        //console.log('6')
+                        console.log('6')
                         const { accessToken, refreshToken } = generateTokens(user._id.toString());
                         user.tokens = []
                         user.tokens.push(refreshToken);
@@ -170,7 +171,7 @@ const refresh = async (req: Request, res: Response) => {
 }
 
 const logout = async (req: Request, res: Response) => {
-    const token = req.headers['refreshtoken']
+    const token = req.headers['accesstoken']
     console.log("12541")
     if (token == null) {
         console.log("Missing token");

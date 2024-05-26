@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\api",
+    "\\assets",
     "\\Components",
+    "\\Components\\edit",
     "\\Components\\post",
     "\\models"
   ],
-  "SelectedNode": "\\Components\\post\\EditablePost.tsx",
+  "SelectedNode": "\\models\\PostModel.ts",
   "PreviewInSolutionExplorer": false
 }

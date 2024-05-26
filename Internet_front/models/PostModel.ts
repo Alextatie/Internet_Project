@@ -56,17 +56,18 @@ const postPost = async (msg:string,type:string) => {
     }
 }
 
-const editPost = async (id:string,msg: string,type:string) => {
+const editPost = async (id: string, string: string, type: string) => {
     try {
         await StudentModel.refresh()
         const data = {
-            message: msg,
+            message: string,
             type: type
         }
         return await UserApi.editPost(id, data)
+
     } catch (err) {
-    console.log(err)
-}
+        console.log(err)
+    }
 }
 
 const deletePost = async (id: string) => {
@@ -78,4 +79,4 @@ const deletePost = async (id: string) => {
 }
 }
 
-export default { getAllPosts, postPost,editPost,deletePost};
+export default { getAllPosts, postPost, editPost, deletePost };

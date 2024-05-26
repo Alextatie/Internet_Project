@@ -4,6 +4,7 @@ import React, { useState, FC } from 'react';
 import StudentModel, { Student, Editable } from '../../models/StudentModel';
 import styles from '../../styles';
 import ActivityIndicator from '../Lottie';
+import PostModel, { Post } from '../../models/PostModel';
 
 const NameEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
     let [name, nameInput] = React.useState('');
@@ -19,6 +20,7 @@ const NameEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }) =
             else {
                 setLoading(true)
                 await StudentModel.Edit(name, "name")
+                //await PostModel.updateNames()
                 setLoading(false)
                 console.log("Editing " + StudentModel.getCurrent().id)
             }

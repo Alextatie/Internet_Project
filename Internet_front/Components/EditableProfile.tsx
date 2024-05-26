@@ -1,12 +1,13 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, Button, Alert, TextInput, StatusBar } from 'react-native';
 import React, { useState, FC, useEffect } from 'react';
 import StudentModel from '../models/StudentModel';
+import PostModel, { Post } from '../models/PostModel';
 import styles from '../styles';
 import ActivityIndicator from './Lottie';
 import * as ImagePicker from 'expo-image-picker';
 
 const EditableProfile: FC<{ route: any, navigation: any }> = ({ route, navigation }) => {
-    const [imageURI, setImageURI] = useState("")
+    const [loading, setLoading] = useState(false)
     const requestPermission = async () => {
         try {
             const res = await ImagePicker.requestCameraPermissionsAsync()
@@ -38,14 +39,21 @@ const EditableProfile: FC<{ route: any, navigation: any }> = ({ route, navigatio
         try {
 
             const res = await ImagePicker.launchCameraAsync()
+            setLoading(true)
             if (!res.canceled && res.assets.length > 0) {
 
                 await StudentModel.Edit(res.assets[0].uri, "avatar")
+                //await PostModel.updateAvatar()
             }
+            setLoading(false)
         } catch (err) {
             console.log(err)
         }
-        //navigation.navigate('NameEdit');
+        navigation.navigate('EditableProfile', {
+            id: StudentModel.getCurrent().id,
+            email: StudentModel.getCurrent().email,
+            name: StudentModel.getCurrent().name
+        });
     }
     const onGallery = async () => {
         console.log("Open Gallery")
@@ -55,11 +63,16 @@ const EditableProfile: FC<{ route: any, navigation: any }> = ({ route, navigatio
             if (!res.canceled && res.assets.length > 0) {
 
                 await StudentModel.Edit(res.assets[0].uri, "avatar")
+                //await PostModel.updateAvatar()
             }
         } catch (err) {
             console.log(err)
         }
-        //navigation.navigate('NameEdit');
+        navigation.navigate('EditableProfile', {
+            id: StudentModel.getCurrent().id,
+            email: StudentModel.getCurrent().email,
+            name: StudentModel.getCurrent().name
+        });
     }
     const onDelete = async () => {
         console.log("Delete User")
@@ -96,7 +109,7 @@ const EditableProfile: FC<{ route: any, navigation: any }> = ({ route, navigatio
             <View style={mystyles.row}>
                 <View style={mystyles.panel}>
                     <Text style={mystyles.input2}>{"Password:  "}</Text>
-                    <Text style={mystyles.input1}>{route.params.id}</Text>
+                    <Text style={mystyles.input1}>*********</Text>
                 </View>
                 <TouchableOpacity style={styles.button3} onPress={onPassword}>
                     <Text style={styles.buttonText4}>Edit</Text>

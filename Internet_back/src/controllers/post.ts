@@ -25,9 +25,16 @@ class PostController extends BaseController<Ipost>{
         const filter = { _id: req.params.id };
         const update = {
             message: req.body.message,
-            type: req.body.type,
+            type: req.body.type
         }
         super.put(req, res,filter, update);
+    }
+    async putSender(req: Request, res: Response) {
+        console.log("update post:")
+        const filter = { _id: req.params.id };
+        let update
+       
+        super.put(req, res, filter, update);
     }
     async remove(req: Request, res: Response) {
         super.remove(req, res);

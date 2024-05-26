@@ -39,18 +39,6 @@ const PostScreen: FC<{ navigation: any }> = ({ navigation }) => {
         return unsubscribe
     }, [navigation])
 
-
-    //useEffect(() => {
-    //    navigation.setOptions({
-    //        headerRight: () => (
-    //            <Button
-    //                onPress={() => navigation.navigate('Register')}
-    //                title="Add"
-    //            />
-    //        ),
-    //    })
-    //}, [])
-
     return (
         loading ?
             <ActivityIndicator visible={true} />
@@ -59,7 +47,8 @@ const PostScreen: FC<{ navigation: any }> = ({ navigation }) => {
             style={styles.flatlist}
             data={data}
             keyExtractor={(item) => item.id}
-            renderItem={({ item }) => (
+                renderItem={({ item }) => (
+
                 <PostListRow
                     id={item.id}
                     message={item.message}

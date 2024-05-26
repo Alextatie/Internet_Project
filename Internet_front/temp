@@ -21,7 +21,7 @@
     "expo-status-bar": "~1.11.1",
     "expo-web-browser": "~13.0.3",
     "firebase": "^10.12.1",
-    "lottie-react-native": "^6.5.1",
+    "lottie-react-native": "6.5.1",
     "react": "18.2.0",
     "react-google-login": "^5.2.2",
     "react-native": "0.73.6",

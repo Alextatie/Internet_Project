@@ -5,6 +5,7 @@ import StudentModel, { Student, Editable } from '../../models/StudentModel';
 import styles from '../../styles';
 import ActivityIndicator from '../Lottie';
 
+
 const EmailEdit: FC<{ route?: any, navigation: any }> = ({ navigation, route }) => {
     let [email, emailInput] = React.useState('');
     const [loading, setLoading] = useState(false)
